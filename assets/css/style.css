@@ -1,15 +1,89 @@
-html {
+html,
+body {
     height: 100%;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+footer {
+    background-color: pink;
+}
+
+/* Header */
+header {
+  
+}
+#header_video {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+/* Nav */
+.navbar {
+    position: absolute;
+    /*
+    top: 1%;
+    left: 25%;
+    width: 50%;
+    border-radius: 50px;
+    */
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.263);
+    
 }
 
 /* Index containers */
 #row-1_container-1 {
-    background-color: pink;
+ 
 }
 
 #row-2_container-1 {
     background-color: rgb(207, 192, 255);
+}
+
+/* Index Rows */
+#row-1 {
+
+}
+
+/* Index Columns */
+#row-2_column-2 {
+    background-color: rgb(136, 215, 136);
+}
+
+/* Hero CTA */
+#header_hero-container {
+    position: relative;
+    
+}
+
+.hero_cta-background {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    top: 14%;
+    left: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 90%;
+    width: 30%;
+    max-width: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+/* https://stackoverflow.com/questions/4296012/hide-div-if-screen-is-smaller-than-a-certain-width
+*/
+@media screen and (max-width: 600px) {
+    .hero_cta-background {
+        display: none !important;
+    }
 }
