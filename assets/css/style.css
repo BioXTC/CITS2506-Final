@@ -47,7 +47,8 @@ header {
 }
 
 #row-2_container-1 {
-    background-color: rgb(207, 192, 255);
+    background-color: rgb(224, 48, 48);
+    height: 300px
 }
 
 /* Index Rows */
@@ -59,8 +60,8 @@ header {
 }
 
 /* Index Columns */
-#row-2_column-2 {
-    background-color: rgb(136, 215, 136);
+#row-3_column-2 {
+   
 }
 
 /* Hero CTA */
@@ -105,3 +106,33 @@ header {
   'GRAD' 0,
   'opsz' 48
 }
+
+.service_card-style-blue {
+    background-color: rgba(50, 71, 89, 1);
+    padding: 10px;
+    margin: 5% 0 5%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        > p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        > h2 {
+            color: rgba(255, 255, 255, 0.80);
+        }
+}
+
+.service_card-style-green {
+    background-color: #8C8684;
+    padding: 10px;
+    margin: 5% 0 5%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        > p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        > h2 {
+            color: rgba(255, 255, 255, 0.80);
+        }
+}
+
+
