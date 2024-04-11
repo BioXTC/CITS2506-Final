@@ -13,6 +13,7 @@ footer {
 /* Header */
 header {}
 
+
 #header_video {
     position: relative;
     top: 0;
@@ -23,8 +24,9 @@ header {}
 
 #hero_svg {
     position: relative;
-    top: -20px;
-    z-index: -2;
+    top: -5px;
+    z-index: 2;
+    padding: 0;
 }
 
 #about_top-svg {
