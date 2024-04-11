@@ -3,25 +3,44 @@ body {
     height: 100%;
     width: 100%;
 }
-body {
-   
-    
-}
+
+body {}
+
 footer {
     background-color: pink;
 }
 
 /* Header */
-header {
-    
-}
-#header_video { 
+header {}
+
+#header_video {
     position: relative;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
+
+#hero_svg {
+    position: relative;
+    top: -20px;
+    z-index: -2;
+}
+
+#about_top-svg {
+    position: relative;
+    top: 10px;
+    padding: 0;
+}
+
+#about_bottom-svg {}
+
+
+#services_header {
+    position: relative;
+    top: -30px;
+}
+
 /* Nav */
 .navbar {
 
@@ -34,19 +53,21 @@ header {
     backdrop-filter: blur(0px);
     z-index: 1;
     color: white;
-    > div a {
-            color: white;
+
+    >div a {
+        color: white;
     }
 }
 
 .navbar-collapse {
-   
+
     border-radius: 0 0 10px;
     backdrop-filter: blur(10px);
 }
+
 .navbar-brand {
     color: white;
-    background-color:rgba(50, 71, 89, 0);
+    background-color: rgba(50, 71, 89, 0);
     overflow: hidden;
     border-radius: 10px;
     padding: 5px;
@@ -54,8 +75,13 @@ header {
 
 
 /* Index containers */
-#container-1 {
+.container-fluid {
+    padding: 0;
 
+}
+
+#container-1 {
+    padding: 0;
     position: relative;
 }
 
@@ -65,21 +91,20 @@ header {
 }
 
 /* Index Rows */
-#row-1 {
+#row-1 {}
 
-}
 #row-3 {
     margin: 0 auto;
+
 }
+
 /* Index Columns */
-#row-3_column-2 {
-   
-}
+#row-3_column-2 {}
 
 /* Hero CTA */
 #header_hero-container {
     position: relative;
-    
+
 }
 
 .hero_cta-background {
@@ -97,6 +122,7 @@ header {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
+
 /* https://stackoverflow.com/questions/4296012/hide-div-if-screen-is-smaller-than-a-certain-width
 */
 @media screen and (max-width: 600px) {
@@ -112,20 +138,23 @@ header {
 }
 
 .material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 48        
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 48
 }
+
 .color-blue {
     font-size: 40px;
     font-variation-settings:
-  'FILL' 100;
+        'FILL' 100;
     color: rgba(50, 71, 89, 1);
 }
+
 .service_card-style-blue {
     background-color: rgba(50, 71, 89, 1);
+    overflow: hidden;
     padding: 10px;
     margin: 5% 0 5%;
     min-width: 200px;
@@ -135,16 +164,19 @@ header {
     text-align: center;
     border: 2px solid white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        > p {
-            color: rgba(255, 255, 255, 0.7);
-        }
-        > h2 {
-            color: rgba(255, 255, 255, 0.80);
-        }
+
+    >p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    >h2 {
+        color: rgba(255, 255, 255, 0.80);
+    }
 }
 
 .service_card-style-green {
-    background-color: #8C8684;
+    background-color: rgb(140, 134, 132);
+    overflow: hidden;
     padding: 10px;
     margin: 5% 0 5%;
     height: 400px;
@@ -155,15 +187,17 @@ header {
     text-align: center;
     border: 2px solid white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        > p {
-            color: rgba(255, 255, 255, 0.7);
-        }
-        > h2 {
-            color: rgba(255, 255, 255, 0.80);
-        }
+
+    >p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    >h2 {
+        color: rgba(255, 255, 255, 0.80);
+    }
 }
 
 #service_learn-more {
     --bs-btn-bg: pink;
     --bs-btn-border-color: black;
- }   
+}

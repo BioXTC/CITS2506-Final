@@ -67,15 +67,34 @@
                 </span>
 
             </div>
+            <!-- Hero SVG -->
+            <div>
+                <svg id="hero_svg" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="0 1, 104 9, 104 1" fill="rgba(140, 134, 132, 0.9)"></polygon>
+                    <polygon points="104 1, 0 9, 0 1" fill="rgba(50,71,89,0.9)"></polygon>
+                </svg>
+                <div class="d-flex flex-row justify-content-center" id="services_header">
+                    <span class="material-symbols-rounded color-blue animate__animated animate__fadeIn">
+                        star
+                    </span>
+                    <h2>Our Services</h2><span
+                        class="material-symbols-rounded color-blue animate__animated animate__fadeIn">
+                        star
+                    </span>
+                </div>
+            </div>
         </div>
     </header>
+
+
     <!-- Grid Container -->
     <div class="container-fluid d-flex flex-column" id="container-1">
+
         <!-- Row 1 -->
-        <div class="row" id="row-1">
+        <div class="row d-none" id="row-1">
             <!-- Row 1 Col 1-->
             <div class="col-12 text-center" id="row-1_column-1">
-                [placeholder]
+                <!--[placeholder]-->
             </div>
         </div>
 
@@ -83,13 +102,7 @@
         <div class="row" id="row-2">
             <!-- Row 2 Col 1-->
             <div class="col-12 text-center d-flex justify-content-center" id="row-2_column-1">
-                <span class="material-symbols-rounded color-blue animate__animated animate__fadeIn">
-                    star
-                </span>
-                <h2>Our Services</h2><span
-                    class="material-symbols-rounded color-blue animate__animated animate__fadeIn">
-                    star
-                </span>
+
             </div>
         </div>
 
@@ -113,6 +126,7 @@
                 </div>
                 <!-- Card 1 End -->
             </div>
+
             <!-- Row 3 Col 2-->
             <div class="col-sm-4" id="row-3_column-2">
                 <!-- Card 2 -->
@@ -159,23 +173,82 @@
             <!-- Row 1 Col 1-->
             <div class="col-12 text-center" id="row-4_column-1">
                 <a class="btn btn-primary" href="#" role="button" id="service_learn-more">Learn More!</a>
-            </div>
-        </div>
-        <!-- Row 5 -->
-        <div class="row" id="row-5">
-            <!-- Row 1 Col 1-->
-            <div class="col-12 text-center" id="row-5_column-1">
-                [placeholder]
-            </div>
-        </div>
 
-        <!-- Scripts-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <footer class="text-center">
-            Fenstemaker Painting - Since 1998
-        </footer>
+
+
+            </div>
+        </div>
+        
+            <!-- About Top SVG -->
+            <div class="container-fluid">
+                <svg id="about_top-svg" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg"
+                    style="transform: rotateX(180deg)">
+                    <polygon points="0 1, 104 9, 104 1" fill="rgba(140, 134, 132, 0.9)"></polygon>
+                    <polygon points="104 1, 0 9, 0 1" fill="rgba(50,71,89,0.9)"></polygon>
+
+                </svg>
+            </div>
+<div style="background-color: rgba(50, 71, 89, 1);" id="background-1">
+            <!-- Row 5 -->
+            <div class="row" id="row-5">
+                <!-- Row 5 Col 1-->
+                <div class="col-12 text-center" id="row-5_column-1">
+                    <h2>Our Work 1</h2>
+                </div>
+            </div>
+            <!-- Row 6 -->
+            <div class="row" id="row-5">
+                <!-- Row 6 Col 1-->
+                <div class="col-sm-6" id="row-6_column-1">
+                    <!-- Image Comparer Kitchen-->
+                    <sl-image-comparer position="25">
+                        <img slot="before" src="assets\images\kitchen_before.jpg" height="30%" width="30%"
+                            alt="Grayscale version of kittens in a basket looking around." />
+                        <img slot="after" src="assets\images\kitchen_after.jpg" height="30%" width="30%"
+                            alt="Color version of kittens in a basket looking around." />
+                    </sl-image-comparer>
+                </div>
+                <!-- Row 6 Col 2-->
+                <div class="col-sm-6 " id="row-6_column-2">
+                    <h2>Our Work 2</h2>
+                </div>
+            </div>
+            <!-- Row 7 -->
+            <div class="row" id="row-5">
+                <!-- Row 7 Col 1-->
+                <div class="col-sm-6 text-center" id="row-7_column-1">
+                    <h2>Our Work 3</h2>
+                </div>
+                <!-- Row 7 Col 2-->
+                <div class="col-sm-6" id="row-7_column-2">
+                    <!-- Image Comparer Stairs-->
+                    <sl-image-comparer position="25">
+                        <img slot="before" src="/assets/images/stairs_before.jpg" height="70px" width="auto"
+                            alt="Grayscale version of kittens in a basket looking around." />
+                        <img slot="after" src="/assets/images/stairs_after.jpg" height="70px" width="auto"
+                            alt="Color version of kittens in a basket looking around." />
+                    </sl-image-comparer>
+                </div>
+            </div>
+        </div>
+        <!-- About Bottom SVG -->
+        <div class="container-fluid">
+            <svg id="about_bottom-svg" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg"
+                style="transform: rotateY(180deg)">
+                <polygon points="104 0, 0 10, 0 0" fill="rgb(50,71,89)"></polygon>
+
+            </svg>
+        </div>
+    </div>
+    <!-- Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    </div>
+
+    <footer class="text-center">
+        Fenstemaker Painting - Since 1998
+    </footer>
 
 </body>
 
