@@ -24,22 +24,35 @@ header {
 }
 /* Nav */
 .navbar {
+
     position: absolute;
     top: 0;
-    width: 100%;
-    background-color: rgba(50, 71, 89, 0.9);
-    backdrop-filter: blur(5px);
+    width: 55%;
+    max-width: 550px;
+    border-radius: 0 0 10px;
+    background-color: rgba(50, 71, 89, 1);
+    backdrop-filter: blur(0px);
     z-index: 1;
-    color: white
+    color: white;
+    > div a {
+            color: white;
+    }
 }
 
+.navbar-collapse {
+   
+    border-radius: 0 0 10px;
+    backdrop-filter: blur(10px);
+}
 .navbar-brand {
     color: white;
     background-color:rgba(50, 71, 89, 0);
-  
+    overflow: hidden;
     border-radius: 10px;
-    padding: 5px
+    padding: 5px;
 }
+
+
 /* Index containers */
 #row-1_container-1 {
 
@@ -58,7 +71,9 @@ header {
     background-size: cover;
     height: 100%;
 }
-
+#row-3 {
+    margin: 0 auto;
+}
 /* Index Columns */
 #row-3_column-2 {
    
@@ -111,7 +126,12 @@ header {
     background-color: rgba(50, 71, 89, 1);
     padding: 10px;
     margin: 5% 0 5%;
+    min-width: 200px;
+    max-width: 325px;
+    height: 350px;
+    width: 100%;
     text-align: center;
+    border: 2px solid white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         > p {
             color: rgba(255, 255, 255, 0.7);
@@ -125,7 +145,13 @@ header {
     background-color: #8C8684;
     padding: 10px;
     margin: 5% 0 5%;
+    height: 400px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 350px;
+    max-height: 450px;
     text-align: center;
+    border: 2px solid white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         > p {
             color: rgba(255, 255, 255, 0.7);
