@@ -54,7 +54,7 @@ header {
 
 
 /* Index containers */
-#row-1_container-1 {
+#container-1 {
 
     position: relative;
 }
@@ -66,10 +66,7 @@ header {
 
 /* Index Rows */
 #row-1 {
-    background-image: url("/assets/images/greyhouse_hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+
 }
 #row-3 {
     margin: 0 auto;
