@@ -24,7 +24,7 @@ header {}
 
 #hero_svg {
     position: relative;
-    top: -5px;
+    top: -6px;
     z-index: 2;
     padding: 0;
 }
@@ -44,42 +44,61 @@ header {}
 }
 
 /* Nav */
-.navbar {
-
+.top_navbar {
+    padding: 10px;
+    width: auto;
     position: absolute;
-    top: 0;
-    width: 55%;
-    max-width: 550px;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    z-index: 3;
     border-radius: 0 0 10px;
-    background-color: rgba(50, 71, 89, 1);
-    backdrop-filter: blur(0px);
-    z-index: 1;
-    color: white;
-
-    >div a {
-        color: white;
-    }
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-collapse {
-
-    border-radius: 0 0 10px;
-    backdrop-filter: blur(10px);
-}
-
-.navbar-brand {
-    color: white;
-    background-color: rgba(50, 71, 89, 0);
-    overflow: hidden;
-    border-radius: 10px;
+.top_navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
     padding: 5px;
+    text-decoration: none;
+    font-size: 17px;
 }
+
+.top_navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.top_navbar a.active {
+    background-color: rgba(50, 71, 89, 0.9);
+    color: white;
+    width: 78px;
+    
+}
+
+.top_navbar .icon {
+    display: none;
+}
+
+.top_navbar .icon {
+    display: none;
+}
+
+.top_navbar.responsive {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border-radius: 0;
+}
+
+
+
 
 
 /* Index containers */
 .container-fluid {
     padding: 0;
-
 }
 
 #container-1 {
@@ -97,7 +116,6 @@ header {}
 
 #row-3 {
     margin: 0 auto;
-
 }
 
 /* Index Columns */
@@ -106,40 +124,21 @@ header {}
 /* Hero CTA */
 #header_hero-container {
     position: relative;
-
 }
 
 .hero_cta-background {
     display: none;
-    position: absolute;
-    z-index: 0;
-    top: 14%;
-    left: 60%;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    height: 90%;
-    width: 30%;
-    max-width: 300px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
 }
 
-/* https://stackoverflow.com/questions/4296012/hide-div-if-screen-is-smaller-than-a-certain-width
-*/
-@media screen and (max-width: 600px) {
-    .hero_cta-background {
-        display: none !important;
-    }
-}
 
+/* Utility */
 .service_card-icon {
     display: flex;
     justify-content: center;
-
 }
 
 .material-symbols-rounded {
+    color: white;
     font-variation-settings:
         'FILL' 0,
         'wght' 300,
@@ -200,6 +199,38 @@ header {}
 }
 
 #service_learn-more {
-    --bs-btn-bg: pink;
+    border: 1px solid white;
+    margin-top: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.316);
+    --bs-btn-bg: rgba(50, 71, 89, 0.9);
     --bs-btn-border-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .top_navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .top_navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+        .top_navbar.responsive {
+            position: absolute
+        }
+
+        .top_navbar.responsive a.icon {
+            position: absolute;
+            left: 88px;
+            top: 10px;
+        }
+    }
+
+    .top_navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
