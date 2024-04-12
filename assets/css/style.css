@@ -39,8 +39,7 @@ header {}
 
 
 #services_header {
-    position: relative;
-    top: -30px;
+    
 }
 
 /* Nav */
@@ -138,7 +137,7 @@ header {}
 }
 
 .material-symbols-rounded {
-    color: white;
+    color: rgb(0, 0, 0);
     font-variation-settings:
         'FILL' 0,
         'wght' 300,
@@ -232,5 +231,11 @@ header {}
         float: none;
         display: block;
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero_svg-header {
+        display: none;
     }
 }
