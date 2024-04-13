@@ -205,7 +205,7 @@ body {
     flex-direction: row;
     position: absolute;
     z-index: 5;
-    top: 60vw;
+    top: 58vw;
     left: auto;
     right: 0;
     background-color: rgba(255, 255, 255, 0.2);
@@ -319,6 +319,11 @@ font-style: normal;
 }
 .acier-outline {
 font-family: "acier-bat-outline", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.stroudley-regular {
+font-family: "stroudley", sans-serif;
 font-weight: 400;
 font-style: normal;
 }
