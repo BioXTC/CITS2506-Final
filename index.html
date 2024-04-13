@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets\css\style.css">
+   
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
     <script src="https://kit.fontawesome.com/dc06a9162b.js" crossorigin="anonymous"></script>
-
+     <link rel="stylesheet" href="assets\css\style.css">
     <script src="assets/scripts/script.js"></script>
 </head>
 
@@ -45,7 +45,7 @@
 
         <!-- Row 1 -->
         <div class="row" id="row-1">
-            <div class="col" id="hero_image">
+            <div class="col">
             </div>
             <h2 class="text-center">Starlight Painting</h2>
             <h6 class="text-center">Why Us?</h6>
@@ -53,55 +53,79 @@
             <div class="col-sm-12" id="row-1_column-1">
 
                 <!-- Why Us Tab Panel-->
-                <sl-tab-group class="test">
+                <sl-tab-group class="tab_panel">
                     <sl-tab slot="nav" panel="general">Quality First</sl-tab>
                     <sl-tab slot="nav" panel="custom">Fully Transparent Pricing</sl-tab>
                     <sl-tab slot="nav" panel="advanced">On-Time Completion</sl-tab>
                     <sl-tab-panel name="general">
                         <!-- Quality First Card -->
-                        <div class="container" id="quality_card-container">
-                                <p class="text-wrap">
-                                    As one of the nation's premier painting companies, our reputation is built on a
-                                    steadfast dedication to delivering unparalleled painting services. This commitment
-                                    begins with our exceptional customer service team, who ensure that your experience
-                                    is seamless from the initial consultation through the final touches.
-                                </p>
-                                <div class="card mb-3" style="max-width: auto;">
-                                    <div class="row g-0">
-                                      <div class="col-md-6">
-                                        <img src="assets\images\quality_splash.jpg" class="img-fluid" alt="..." id="quality_image">
-                                      </div>
-                                      <div class="col-md-6 background-blue">
+                        <div class="container whyUs_card-container">
+                            <p class="text-wrap">
+                                As one of the nation's premier painting companies, our reputation is built on a
+                                steadfast dedication to delivering unparalleled painting services. This commitment
+                                begins with our exceptional customer service team, who ensure that your experience
+                                is seamless from the initial consultation through the final touches.
+                            </p>
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-lg-6">
+                                        <img src="assets\images\quality_splash.jpg" class="img-fluid quality_image" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 background-blue d-flex justify-items-center">
                                         <div class="card-body text-light">
                                             <div class="container-fluid">
-                                          <h5 class="card-title text-center h1">Quality First</h5>
-                                          <p class="card-text fs-5 mt-3">As one of the nation's premier painting companies, our reputation is built on a
-                                            steadfast dedication to delivering unparalleled painting services.</p>
-                                            <p class="card-text fs-5">
-                                            This commitment
-                                            begins with our exceptional customer service team, who ensure that your experience
-                                            is seamless from the initial consultation through the final touches.</p>
-                                          </div>
-                                          
+                                                <h5 class="card-title text-center h1">Quality First</h5>
+                                                <p class="card-text fs-5">As one of the nation's premier painting
+                                                    companies, our reputation is built on a
+                                                    steadfast dedication to delivering unparalleled painting services.
+                                                </p>
+                                                <p class="card-text fs-5">
+                                                    This commitment
+                                                    begins with our exceptional customer service team, who ensure that
+                                                    your experience
+                                                    
+                                                </p>
+                                            </div>
+
                                         </div>
-                                      </div>
                                     </div>
-                                  </div>
                                 </div>
                             </div>
                         </div>
-                    
+
+
                     </sl-tab-panel>
                     <sl-tab-panel name="custom">
-                        <!-- Fully Transparent Pricing Card -->
-                        <sl-card class="card-basic">
-                            As one of the nation's premier painting companies, our reputation is built on a steadfast
-                            dedication to delivering unparalleled painting services. This commitment begins with our
-                            exceptional customer service team, who ensure that your experience is seamless from the
-                            initial consultation through the final touches. Throughout the process, you can rest assured
-                            that you'll receive nothing short of top-tier services, an unrivaled level of customer
-                            support, and a final product that will surpass even your most ambitious expectations.
-                        </sl-card></sl-tab-panel>
+                        <!-- Quality First Card -->
+                        <div class="container whyUs_card-container">
+                           
+                            <div class="card mb-3" style="max-width: auto;">
+                                <div class="row g-0">
+                                    <div class="col-sm-6">
+                                        <img src="assets\images\quality_splash.jpg" class="quality_image" alt="...">
+                                    </div>
+                                    <div class="col-sm-6 background-blue">
+                                        <div class="card-body text-light">
+                                            <div class="container-fluid">
+                                                <h5 class="card-title text-center h1">Quality First</h5>
+                                                <p class="card-text fs-5 mt-3">As one of the nation's premier painting
+                                                    companies, our reputation is built on a
+                                                    steadfast dedication to delivering unparalleled painting services.
+                                                </p>
+                                                <p class="card-text fs-5">
+                                                    This commitment
+                                                    begins with our exceptional customer service team, who ensure that
+                                                    your experience
+                                                    is seamless from the initial consultation through the final touches.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sl-tab-panel>
                     <sl-tab-panel name="advanced">
                         <!-- On-Time Completion Card -->
                         <sl-card class="card-basic">
@@ -111,7 +135,8 @@
                             initial consultation through the final touches. Throughout the process, you can rest assured
                             that you'll receive nothing short of top-tier services, an unrivaled level of customer
                             support, and a final product that will surpass even your most ambitious expectations.
-                        </sl-card></sl-tab-panel>
+                        </sl-card>
+                    </sl-tab-panel>
 
                 </sl-tab-group>
                 <!-- Why Us Tab Panel End -->

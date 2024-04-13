@@ -8,10 +8,10 @@ footer {
 }
 
 body {
- 
+
     height: 100%;
     width: 100%;
-
+}
 
 /* Header */
 
@@ -50,8 +50,8 @@ body {
 .top_navbar a.active {
     background-color: rgba(104, 104, 104, 0);
     color: white;
-    
-    
+
+
 }
 
 .top_navbar .icon {
@@ -83,16 +83,19 @@ body {
     background-color: rgb(224, 48, 48);
     height: 300px
 }
-#quality_card-container { 
-    > img {
+
+.whyUs_card-container {
+    overflow: hidden;
+    >img {
         display: block;
         margin: auto;
         height: 100%;
-        max-height: 600px;
-        max-width: auto;
+        max-height: auto;
+        max-width: 514px;
         width: auto;
-        
+
     }
+
     > p {
         display: none;
         color: rgba(0, 0, 0, 0.464);
@@ -119,24 +122,48 @@ body {
 /* Index Columns */
 
 
-
 /* Hero */
 #hero_image {
     display: block;
     height: 50%;
     width: 100%;
 }
-#header_hero-container {
-    position: relative;
+
+/* Tab Group */
+
+.tab_panel::part(base) {
+    --indicator-color: rgba(50, 71, 89, 0.9);
+    --track-color: rgba(255, 255, 255, 0);
+    --track-width: 4px;
+
 }
 
-.hero_cta-background {
-    display: none;
+.tab_panel::part(nav) {
+    margin: 0 auto;
 }
 
-#quality_image {
-    height: 500px;
-    width: auto;
+.card {
+    border: 0;
+}
+
+.card-body {
+    width: 600px;
+    height: auto;
+
+}
+
+/* Services */
+#service_learn-more {
+    border: 1px solid white;
+    margin-top: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.316);
+    --bs-btn-bg: rgba(50, 71, 89, 0.9);
+    --bs-btn-border-color: black;
+}
+
+.service_card-icon {
+    display: flex;
+    justify-content: center;
 }
 
 /* Utility */
@@ -144,20 +171,11 @@ body {
     background-color: rgba(50, 71, 89, 1);
 }
 
-.test::part(base) {
-    --indicator-color: rgba(50, 71, 89, 0.9);
-    --track-color: rgba(255,255,255,0);
-    --track-width: 4px;
-    
-}
-
-.test::part(nav) {
-    margin: 0 auto;
-}
-
-.service_card-icon {
-    display: flex;
-    justify-content: center;
+.color-blue {
+    font-size: 40px;
+    font-variation-settings:
+        'FILL' 100;
+    color: rgba(50, 71, 89, 1);
 }
 
 .material-symbols-rounded {
@@ -169,65 +187,6 @@ body {
         'opsz' 48
 }
 
-.color-blue {
-    font-size: 40px;
-    font-variation-settings:
-        'FILL' 100;
-    color: rgba(50, 71, 89, 1);
-}
-
-.service_card-style-blue {
-    background-color: rgba(50, 71, 89, 1);
-    overflow: hidden;
-    padding: 10px;
-    margin: 5% 0 5%;
-    min-width: 200px;
-    max-width: 325px;
-    height: 350px;
-    width: 100%;
-    text-align: center;
-    border: 2px solid white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-
-    >p {
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    >h2 {
-        color: rgba(255, 255, 255, 0.80);
-    }
-}
-
-.service_card-style-green {
-    background-color: rgb(140, 134, 132);
-    overflow: hidden;
-    padding: 10px;
-    margin: 5% 0 5%;
-    height: 400px;
-    width: 100%;
-    min-width: 200px;
-    max-width: 350px;
-    max-height: 450px;
-    text-align: center;
-    border: 2px solid white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-
-    >p {
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    >h2 {
-        color: rgba(255, 255, 255, 0.80);
-    }
-}
-
-#service_learn-more {
-    border: 1px solid white;
-    margin-top: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.316);
-    --bs-btn-bg: rgba(50, 71, 89, 0.9);
-    --bs-btn-border-color: black;
-}
 
 @media screen and (max-width: 600px) {
     .top_navbar a:not(:first-child) {
@@ -263,6 +222,4 @@ body {
     .hero_svg-header {
         display: none;
     }
-}
-
 }
