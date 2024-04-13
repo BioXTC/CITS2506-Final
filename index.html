@@ -47,8 +47,8 @@
         <div class="row" id="row-1">
             <div class="col">
             </div>
-            <h2 class="text-center">Starlight Painting</h2>
-            <h6 class="text-center">Why Us?</h6>
+            <h2 class="text-center d-none">Starlight Painting</h2>
+            <h6 class="text-center d-none">Why Us?</h6>
             <!-- Row 1 Col 1-->
             <div class="col-sm-12" id="row-1_column-1">
 
@@ -96,19 +96,24 @@
 
                     </sl-tab-panel>
                     <sl-tab-panel name="custom">
-                        <!-- Quality First Card -->
+                        <!-- Transparent Pricing Card -->
                         <div class="container whyUs_card-container">
-                           
-                            <div class="card mb-3" style="max-width: auto;">
+                            <p class="text-wrap">
+                                As one of the nation's premier painting companies, our reputation is built on a
+                                steadfast dedication to delivering unparalleled painting services. This commitment
+                                begins with our exceptional customer service team, who ensure that your experience
+                                is seamless from the initial consultation through the final touches.
+                            </p>
+                            <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-sm-6">
-                                        <img src="assets\images\quality_splash.jpg" class="quality_image" alt="...">
+                                    <div class="col-lg-6">
+                                        <img src="assets\images\estimate.jpg" class="img-fluid quality_image" alt="...">
                                     </div>
-                                    <div class="col-sm-6 background-blue">
+                                    <div class="col-lg-6 background-orange d-flex justify-items-center">
                                         <div class="card-body text-light">
                                             <div class="container-fluid">
-                                                <h5 class="card-title text-center h1">Quality First</h5>
-                                                <p class="card-text fs-5 mt-3">As one of the nation's premier painting
+                                                <h5 class="card-title text-center h1">Transparent Pricing</h5>
+                                                <p class="card-text fs-5">As one of the nation's premier painting
                                                     companies, our reputation is built on a
                                                     steadfast dedication to delivering unparalleled painting services.
                                                 </p>
@@ -116,7 +121,7 @@
                                                     This commitment
                                                     begins with our exceptional customer service team, who ensure that
                                                     your experience
-                                                    is seamless from the initial consultation through the final touches.
+                                                    
                                                 </p>
                                             </div>
 
@@ -127,15 +132,40 @@
                         </div>
                     </sl-tab-panel>
                     <sl-tab-panel name="advanced">
-                        <!-- On-Time Completion Card -->
-                        <sl-card class="card-basic">
-                            As one of the nation's premier painting companies, our reputation is built on a steadfast
-                            dedication to delivering unparalleled painting services. This commitment begins with our
-                            exceptional customer service team, who ensure that your experience is seamless from the
-                            initial consultation through the final touches. Throughout the process, you can rest assured
-                            that you'll receive nothing short of top-tier services, an unrivaled level of customer
-                            support, and a final product that will surpass even your most ambitious expectations.
-                        </sl-card>
+                         <!-- On Time Card -->
+                         <div class="container whyUs_card-container">
+                            <p class="text-wrap">
+                                As one of the nation's premier painting companies, our reputation is built on a
+                                steadfast dedication to delivering unparalleled painting services. This commitment
+                                begins with our exceptional customer service team, who ensure that your experience
+                                is seamless from the initial consultation through the final touches.
+                            </p>
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-lg-6">
+                                        <img src="assets\images\on_time.jpg" class="img-fluid quality_image" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 background-brown d-flex justify-items-center">
+                                        <div class="card-body text-light">
+                                            <div class="container-fluid">
+                                                <h5 class="card-title text-center h1">On Time</h5>
+                                                <p class="card-text fs-5">As one of the nation's premier painting
+                                                    companies, our reputation is built on a
+                                                    steadfast dedication to delivering unparalleled painting services.
+                                                </p>
+                                                <p class="card-text fs-5">
+                                                    This commitment
+                                                    begins with our exceptional customer service team, who ensure that
+                                                    your experience
+                                                    
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </sl-tab-panel>
 
                 </sl-tab-group>
@@ -165,8 +195,8 @@
             <div class="col-sm-4" id="row-3_column-1">
                 <!-- Card 1 -->
                 <div class="service_card  m-auto mt-2" id="service_card-1" data-aos="fade-right">
-                    <div class="service_card-icon" data-aos="fade-up">
-                        <span class="material-symbols-rounded">house</span>
+                    <div class="service_card-icon " data-aos="fade-up">
+                        <span class="material-symbols-rounded" style="color:rgb(56, 98, 135);">house</span>
                     </div>
                     <h2 class="text-center">Residential</h2>
                     <p>
@@ -183,7 +213,7 @@
                 <!-- Card 2 -->
                 <div class="service_card m-auto" id="service_card-2" data-aos="fade-up">
                     <div class="service_card-icon" data-aos="fade-up">
-                        <span class="material-symbols-rounded">business</span>
+                        <span class="material-symbols-rounded" style="color:rgb(224, 103, 60);">business</span>
                     </div>
                     <h2 class="text-center">Commercial</h2>
                     <p>
@@ -201,7 +231,7 @@
                 <!-- Card 3 -->
                 <div class="service_card m-auto mt-2" id="service_card-3" data-aos="fade-left">
                     <div class="service_card-icon" data-aos="fade-up">
-                        <span class="material-symbols-rounded">format_paint</span>
+                        <span class="material-symbols-rounded" style="color:#401D10;">format_paint</span>
                     </div>
                     <h2 class="text-center">Remodeling</h2>
                     <p>
@@ -270,7 +300,7 @@
 
 
     <footer class="text-center">
-        Fenstemaker Painting - Since 1998
+       
     </footer>
 
 </body>

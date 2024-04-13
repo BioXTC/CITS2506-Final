@@ -1,11 +1,25 @@
+:root {
+    /* Changes the primary theme color to purple using primitives */
+    --sl-color-primary-50: var(--colorBlue);
+    --sl-color-primary-100: var(--colorBlue);
+    --sl-color-primary-200: var(--colorBlue);
+    --sl-color-primary-300: var(--colorBlue);
+    --sl-color-primary-400: var(--colorBlue);
+    --sl-color-primary-500: var(--colorBlue);
+    --sl-color-primary-600: var(--colorBlue);
+    --sl-color-primary-700: var(--colorBlue);
+    --sl-color-primary-800: var(--colorBlue);
+    --sl-color-primary-900: var(--colorBlue);
+    --sl-color-primary-950: var(--colorBlue);
+    --colorBlue: rgb(49, 92, 131);
+  }
+  
 html {
     height: 100%;
     width: 100%;
 }
 
-footer {
-    background-color: pink;
-}
+
 
 body {
 
@@ -130,9 +144,11 @@ body {
 }
 
 /* Tab Group */
-
+.tab_panel::part(nav):active {
+    color: pink !important;
+}
 .tab_panel::part(base) {
-    --indicator-color: rgba(50, 71, 89, 0.9);
+    --indicator-color: rgb(224, 103, 60);
     --track-color: rgba(255, 255, 255, 0);
     --track-width: 4px;
 
@@ -157,8 +173,8 @@ body {
     border: 1px solid white;
     margin-top: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.316);
-    --bs-btn-bg: rgba(50, 71, 89, 0.9);
-    --bs-btn-border-color: black;
+    --bs-btn-bg: rgb(224, 103, 60);
+    --bs-btn-border-color: rgb(224, 103, 60);
 }
 
 .service_card-icon {
@@ -169,6 +185,16 @@ body {
 /* Utility */
 .background-blue {
     background-color: rgba(50, 71, 89, 1);
+}
+
+.background-orange {
+   
+    background-color: rgb(224, 103, 60);
+}
+
+.background-brown {
+   
+    background-color: #401D10;
 }
 
 .color-blue {
