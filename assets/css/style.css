@@ -1,16 +1,16 @@
 :root {
     /* Changes the primary theme color to purple using primitives */
-    --sl-color-primary-50: var(--colorBlue);
-    --sl-color-primary-100: var(--colorBlue);
-    --sl-color-primary-200: var(--colorBlue);
-    --sl-color-primary-300: var(--colorBlue);
-    --sl-color-primary-400: var(--colorBlue);
-    --sl-color-primary-500: var(--colorBlue);
-    --sl-color-primary-600: var(--colorBlue);
-    --sl-color-primary-700: var(--colorBlue);
-    --sl-color-primary-800: var(--colorBlue);
-    --sl-color-primary-900: var(--colorBlue);
-    --sl-color-primary-950: var(--colorBlue);
+    --sl-color-primary-50: var(--colorBlue-100);
+    --sl-color-primary-100: var(--colorBlue-100);
+    --sl-color-primary-200: var(--colorBlue-100);
+    --sl-color-primary-300: var(--colorBlue-100);
+    --sl-color-primary-400: var(--colorBlue-100);
+    --sl-color-primary-500: var(--colorBlue-100);
+    --sl-color-primary-600: var(--colorBlue-100);
+    --sl-color-primary-700: var(--colorBlue-100);
+    --sl-color-primary-800: var(--colorBlue-100);
+    --sl-color-primary-900: var(--colorBlue-100);
+    --sl-color-primary-950: var(--colorBlue-100);
     /* Custom Colors */
     --colorBlue-100: rgba(49, 92, 131, 1);
     --colorBlue-90: rgba(49, 92, 131, 0.9);
@@ -64,16 +64,18 @@ body {
 
 
 #logo_container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
+
 #logo {
 
     height: auto;
-   width: 100%;
-   max-width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
+
 .top_navbar {
     padding: 10px;
     width: 100%;
@@ -86,7 +88,7 @@ body {
     z-index: 4;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 
-     >img {
+    >img {
         position: relative;
         float: right;
         top: 0px;
@@ -101,24 +103,27 @@ body {
         color: #f2f2f2;
         text-align: center;
         align-items: center;
-        padding: 5px;
+        padding: 7px;
         text-decoration: none;
         text-decoration-color: var(--colorBlue-100);
         text-underline-offset: 4px;
         text-decoration-thickness: 5px;
         font-size: 20px;
         margin-top: 10px;
+        border-radius: 9999px;
     }
 
     >a:hover {
         background-color: #ddd;
+        border-radius: 9999px;
         color: black;
     }
 
     >a.active {
         background-color: var(--colorOrange-90);
         color: white;
-        
+
+        padding: 7px;
     }
 
     >.icon {
@@ -194,6 +199,7 @@ body {
     height: 50%;
     width: 100%;
 }
+
 #free_estimate {
     display: flex;
     flex-direction: row;
@@ -210,11 +216,12 @@ body {
     text-align: center;
     font-size: 25px;
     border-radius: 9999px 0 0 9999px;
-    box-shadow: 
-    5px 5px 15px rgba(0, 0, 0, 0.504),
-    0 5px 15px rgba(0, 0, 0, 0.243) inset;
+    box-shadow:
+        5px 5px 15px rgba(0, 0, 0, 0.504),
+        0 5px 15px rgba(0, 0, 0, 0.243) inset;
     padding-top: 12px;
     padding-left: 12px;
+
     >span {
         color: var(--colorOrange-100);
         font-size: 30px;
@@ -223,6 +230,7 @@ body {
         padding-top: 5px;
     }
 }
+
 /* Tab Group */
 .tab_panel::part(nav):hover {
     color: rgb(230, 110, 12) !important;
@@ -294,8 +302,26 @@ body {
         'opsz' 48
 }
 
-
-
+.acier-gris {
+    font-family: "acier-bat-gris", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.acier-solid {
+    font-family: "acier-bat-solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.acier-noir {
+    font-family: "acier-bat-noir", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.acier-outline {
+font-family: "acier-bat-outline", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 @media screen and (max-width: 600px) {
     .top_navbar a:not(:first-child) {
         display: none;
