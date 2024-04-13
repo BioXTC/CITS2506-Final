@@ -61,20 +61,34 @@ body {
 /* Header */
 
 /* Nav */
+
+
+#logo_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#logo {
+
+    height: auto;
+   width: 100%;
+   max-width: 400px;
+}
 .top_navbar {
     padding: 10px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    overflow: ;
+    overflow: hidden;
     background-color: rgba(50, 71, 89, 0.8);
     backdrop-filter: blur(5px);
-    z-index: 0;
+    z-index: 4;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 
-    >img {
+     >img {
         position: relative;
+        float: right;
         top: 0px;
         height: 50px;
         margin-left: 10px;
@@ -180,10 +194,38 @@ body {
     height: 50%;
     width: 100%;
 }
-
+#free_estimate {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 5;
+    top: 60vw;
+    left: auto;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    width: 60%;
+    max-width: 425px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 9999px 0 0 9999px;
+    box-shadow: 
+    5px 5px 15px rgba(0, 0, 0, 0.504),
+    0 5px 15px rgba(0, 0, 0, 0.243) inset;
+    padding-top: 12px;
+    padding-left: 12px;
+    >span {
+        color: var(--colorOrange-100);
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+}
 /* Tab Group */
-.tab_panel::part(nav):active {
-    color: pink !important;
+.tab_panel::part(nav):hover {
+    color: rgb(230, 110, 12) !important;
 }
 
 .tab_panel::part(base) {
@@ -263,6 +305,7 @@ body {
         float: right;
         display: block;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -281,5 +324,11 @@ body {
         float: none;
         display: block;
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #free_estimate {
+        display: none;
     }
 }
