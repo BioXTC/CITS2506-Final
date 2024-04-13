@@ -34,64 +34,87 @@
                 </a>
             </div>
         </nav>
-        <!-- Video Container-->
-        <div id="header_hero-container">
-            <!-- Video -->
-            <video autoplay muted loop id="header_video">
-                <source src="assets\video\single_house_stitched.mp4" type="video/mp4">
-            </video>
-            <!-- CTA -->
-            <div class="hero_cta-background">
-                <h2>Get a qoute today!</h2><span class="material-symbols-rounded">
-                    star
-                </span>
-
-            </div>
-            <!-- Hero SVG -->
-            <div>
-                <svg class="hero_svg-header" id="hero_svg" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="0 0, 104 10, 104 0" fill="rgba(140, 134, 132, 0.9)"></polygon>
-                    <polygon points="104 0, 0 10, 0 0" fill="rgba(50,71,89,0.9)"></polygon>
-                </svg>
-                
-            </div>
-        </div>
     </header>
+    <div>
+        <img src="/assets/images/pexels-huseyn-kamaladdin-667838.jpg" id="hero_image">
+
+    </div>
 
     <!-- Grid Container -->
     <div class="container-fluid d-flex flex-column" id="container-1">
 
         <!-- Row 1 -->
         <div class="row" id="row-1">
-            <h2>Why Us?</h2>
+            <div class="col" id="hero_image">
+            </div>
+            <h2 class="text-center">Starlight Painting</h2>
+            <h6 class="text-center">Why Us?</h6>
             <!-- Row 1 Col 1-->
-            <div class="col-sm-8 d-flex flex-column m-auto" id="row-1_column-1">
-                
+            <div class="col-sm-12" id="row-1_column-1">
+
                 <!-- Why Us Tab Panel-->
-                <sl-tab-group>
+                <sl-tab-group class="test">
                     <sl-tab slot="nav" panel="general">Quality First</sl-tab>
                     <sl-tab slot="nav" panel="custom">Fully Transparent Pricing</sl-tab>
                     <sl-tab slot="nav" panel="advanced">On-Time Completion</sl-tab>
                     <sl-tab-panel name="general">
                         <!-- Quality First Card -->
-                        <sl-card class="card-basic">
-                            As one of the nation's premier painting companies, our reputation is built on a steadfast dedication to delivering unparalleled painting services. This commitment begins with our exceptional customer service team, who ensure that your experience is seamless from the initial consultation through the final touches. Throughout the process, you can rest assured that you'll receive nothing short of top-tier services, an unrivaled level of customer support, and a final product that will surpass even your most ambitious expectations.
-                          </sl-card>
-                                               
-                    </p></sl-tab-panel>
-                    <sl-tab-panel name="custom">
-                         <!-- Fully Transparent Pricing Card -->
-                        <sl-card class="card-basic">
-                            As one of the nation's premier painting companies, our reputation is built on a steadfast dedication to delivering unparalleled painting services. This commitment begins with our exceptional customer service team, who ensure that your experience is seamless from the initial consultation through the final touches. Throughout the process, you can rest assured that you'll receive nothing short of top-tier services, an unrivaled level of customer support, and a final product that will surpass even your most ambitious expectations.
-                      </sl-card></sl-tab-panel>
-                    <sl-tab-panel name="advanced">
-                         <!-- On-Time Completion Card -->
-                        <sl-card class="card-basic">
-                            As one of the nation's premier painting companies, our reputation is built on a steadfast dedication to delivering unparalleled painting services. This commitment begins with our exceptional customer service team, who ensure that your experience is seamless from the initial consultation through the final touches. Throughout the process, you can rest assured that you'll receive nothing short of top-tier services, an unrivaled level of customer support, and a final product that will surpass even your most ambitious expectations.
-                      </sl-card></sl-tab-panel>
+                        <div class="container" id="quality_card-container">
+                                <p class="text-wrap">
+                                    As one of the nation's premier painting companies, our reputation is built on a
+                                    steadfast dedication to delivering unparalleled painting services. This commitment
+                                    begins with our exceptional customer service team, who ensure that your experience
+                                    is seamless from the initial consultation through the final touches.
+                                </p>
+                                <div class="card mb-3" style="max-width: auto;">
+                                    <div class="row g-0">
+                                      <div class="col-md-6">
+                                        <img src="assets\images\quality_splash.jpg" class="img-fluid" alt="..." id="quality_image">
+                                      </div>
+                                      <div class="col-md-6 background-blue">
+                                        <div class="card-body text-light">
+                                            <div class="container-fluid">
+                                          <h5 class="card-title text-center h1">Quality First</h5>
+                                          <p class="card-text fs-5 mt-3">As one of the nation's premier painting companies, our reputation is built on a
+                                            steadfast dedication to delivering unparalleled painting services.</p>
+                                            <p class="card-text fs-5">
+                                            This commitment
+                                            begins with our exceptional customer service team, who ensure that your experience
+                                            is seamless from the initial consultation through the final touches.</p>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                     
-                  </sl-tab-group>
-                  <!-- Why Us Tab Panel End -->
+                    </sl-tab-panel>
+                    <sl-tab-panel name="custom">
+                        <!-- Fully Transparent Pricing Card -->
+                        <sl-card class="card-basic">
+                            As one of the nation's premier painting companies, our reputation is built on a steadfast
+                            dedication to delivering unparalleled painting services. This commitment begins with our
+                            exceptional customer service team, who ensure that your experience is seamless from the
+                            initial consultation through the final touches. Throughout the process, you can rest assured
+                            that you'll receive nothing short of top-tier services, an unrivaled level of customer
+                            support, and a final product that will surpass even your most ambitious expectations.
+                        </sl-card></sl-tab-panel>
+                    <sl-tab-panel name="advanced">
+                        <!-- On-Time Completion Card -->
+                        <sl-card class="card-basic">
+                            As one of the nation's premier painting companies, our reputation is built on a steadfast
+                            dedication to delivering unparalleled painting services. This commitment begins with our
+                            exceptional customer service team, who ensure that your experience is seamless from the
+                            initial consultation through the final touches. Throughout the process, you can rest assured
+                            that you'll receive nothing short of top-tier services, an unrivaled level of customer
+                            support, and a final product that will surpass even your most ambitious expectations.
+                        </sl-card></sl-tab-panel>
+
+                </sl-tab-group>
+                <!-- Why Us Tab Panel End -->
             </div>
         </div>
 
@@ -214,10 +237,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Scripts End-->
 
 

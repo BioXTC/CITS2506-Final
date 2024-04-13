@@ -1,5 +1,4 @@
-html,
-body {
+html {
     height: 100%;
     width: 100%;
 }
@@ -8,38 +7,28 @@ footer {
     background-color: pink;
 }
 
+body {
+ 
+    height: 100%;
+    width: 100%;
+
 
 /* Header */
-#header_video {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-#hero_svg {
-    position: relative;
-    top: -6px;
-    z-index: 2;
-    padding: 0;
-}
-
-#about_top-svg {
-    position: relative;
-    top: 10px;
-    padding: 0;
-}
 
 /* Nav */
 .top_navbar {
+    display: flex;
+    justify-content: start;
     padding: 10px;
     width: 100%;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(50, 71, 89, 0.8);
     backdrop-filter: blur(5px);
     z-index: 3;
-    border-radius: 0 0 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -59,9 +48,10 @@ footer {
 }
 
 .top_navbar a.active {
-    background-color: rgba(50, 71, 89, 0.9);
+    background-color: rgba(104, 104, 104, 0);
     color: white;
-    width: 78px;
+    
+    
 }
 
 .top_navbar .icon {
@@ -93,7 +83,33 @@ footer {
     background-color: rgb(224, 48, 48);
     height: 300px
 }
+#quality_card-container { 
+    > img {
+        display: block;
+        margin: auto;
+        height: 100%;
+        max-height: 600px;
+        max-width: auto;
+        width: auto;
+        
+    }
+    > p {
+        display: none;
+        color: rgba(0, 0, 0, 0.464);
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 200px;
+        left: 730px;
+        max-height: 500px;
+        max-width: 200px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.134);
+        border: 1px solid rgba(255, 255, 255, 0.414);
+    }
 
+}
 
 /* Index Rows */
 #row-3 {
@@ -104,7 +120,12 @@ footer {
 
 
 
-/* Hero CTA */
+/* Hero */
+#hero_image {
+    display: block;
+    height: 50%;
+    width: 100%;
+}
 #header_hero-container {
     position: relative;
 }
@@ -113,8 +134,27 @@ footer {
     display: none;
 }
 
+#quality_image {
+    height: 500px;
+    width: auto;
+}
 
 /* Utility */
+.background-blue {
+    background-color: rgba(50, 71, 89, 1);
+}
+
+.test::part(base) {
+    --indicator-color: rgba(50, 71, 89, 0.9);
+    --track-color: rgba(255,255,255,0);
+    --track-width: 4px;
+    
+}
+
+.test::part(nav) {
+    margin: 0 auto;
+}
+
 .service_card-icon {
     display: flex;
     justify-content: center;
@@ -223,4 +263,6 @@ footer {
     .hero_svg-header {
         display: none;
     }
+}
+
 }
