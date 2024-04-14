@@ -1,16 +1,40 @@
 :root {
-    /* Changes the primary theme color to purple using primitives */
-    --sl-color-primary-50: var(--colorBlue-100);
-    --sl-color-primary-100: var(--colorBlue-100);
-    --sl-color-primary-200: var(--colorBlue-100);
-    --sl-color-primary-300: var(--colorBlue-100);
-    --sl-color-primary-400: var(--colorBlue-100);
-    --sl-color-primary-500: var(--colorBlue-100);
-    --sl-color-primary-600: var(--colorBlue-100);
-    --sl-color-primary-700: var(--colorBlue-100);
-    --sl-color-primary-800: var(--colorBlue-100);
-    --sl-color-primary-900: var(--colorBlue-100);
-    --sl-color-primary-950: var(--colorBlue-100);
+    --sl-color-primary-50: white;
+    --sl-color-primary-100: white;
+    --sl-color-primary-200: white;
+    --sl-color-primary-300: white;
+    --sl-color-primary-400: white;
+    --sl-color-primary-500: white;
+    --sl-color-primary-600: white;
+    --sl-color-primary-700: white;
+    --sl-color-primary-800: white;
+    --sl-color-primary-900: white;
+    --sl-color-primary-950: white;
+    --sl-color-secondary-50: white;
+    --sl-color-secondary-100: white;
+    --sl-color-secondary-200: white;
+    --sl-color-secondary-300: white;
+    --sl-color-secondary-400: white;
+    --sl-color-secondary-500: white;
+    --sl-color-secondary-600: white;
+    --sl-color-secondary-700: white;
+    --sl-color-secondary-800: white;
+    --sl-color-secondary-900: white;
+    --sl-color-secondary-950: white;
+    --sl-color-neutral-50: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-100: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-200: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-300: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-400: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-500: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-600: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-700: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-800: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-900: rgba(255, 255, 255, 0.75);
+    --sl-color-neutral-950: rgba(255, 255, 255, 0.75);
+
+
+
     /* Custom Colors */
     --colorBlue-100: rgba(49, 92, 131, 1);
     --colorBlue-90: rgba(49, 92, 131, 0.9);
@@ -42,6 +66,7 @@
     --colorBrown-30: rgba(64, 29, 16, 0.3);
     --colorBrown-20: rgba(64, 29, 16, 0.2);
     --colorBrown-10: rgba(64, 29, 16, 0.1);
+    --colorRed-100: rgb(217, 24, 40);
 
 }
 
@@ -49,7 +74,6 @@ html {
     height: 100%;
     width: 100%;
 }
-
 
 
 body {
@@ -273,7 +297,7 @@ body {
 
 /* Utility */
 .background-blue {
-    background-color: var(--colorBlue-100);
+    background-color: rgba(50, 71, 89, 0.8);
 }
 
 .background-orange {
@@ -283,7 +307,7 @@ body {
 
 .background-brown {
 
-    background-color: var(--colorBrown-100);
+    background-color: rgb(166, 84, 36);
 }
 
 .color-blue {
@@ -307,26 +331,57 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 .acier-solid {
     font-family: "acier-bat-solid", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 .acier-noir {
     font-family: "acier-bat-noir", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
+
 .acier-outline {
-font-family: "acier-bat-outline", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-family: "acier-bat-outline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 .stroudley-regular {
-font-family: "stroudley", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-family: "stroudley", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+/* https://wavier.art/ */
+.wave-container {
+    height: 25vh;
+    background-color: #315c83;
+    position: relative;
+}
+
+.wave-container::before {
+    content: "";
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 48vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 22L33 19C82 13 133 14 200 29C267 44 333 67 400 70C467 74 533 59 600 40C667 22 733 0 800 0C867 0 933 22 1000 29C1067 37 1133 29 1167 26L1200 22V134H1167C1133 134 1067 134 1000 134C933 134 867 134 800 134C733 134 667 134 600 134C533 134 467 134 400 134C333 134 267 134 200 134C133 134 67 134 33 134H0V22.332Z' fill='%23ffffff'/></svg>");
+}
+
+@media(max-width:850px) {
+    .wave-container::before {
+        height: 7.5px
+    }
+}
+
 @media screen and (max-width: 600px) {
     .top_navbar a:not(:first-child) {
         display: none;
