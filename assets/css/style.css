@@ -307,7 +307,7 @@ body {
 
 .background-brown {
 
-    background-color: rgb(166, 84, 36);
+    background-color: rgba(237, 32, 35, 0.92);
 }
 
 .color-blue {
@@ -401,8 +401,10 @@ body {
     }
 
     .top_navbar.responsive a.icon {
-        margin-left: aabsolute;
-        right: 100%;
+        position: absolute;
+        left: 88.5vw;
+        top: 15.5vw;
+     
     }
 
 
