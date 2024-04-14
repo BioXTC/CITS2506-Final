@@ -137,56 +137,101 @@
         begins with our exceptional customer service team, who ensure that your experience
         is seamless from the initial consultation through the final touches.
 
-        .top_navbar {
-            display: flex;
-            justify-content: start;
-            padding: 10px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(50, 71, 89, 0.8);
-            backdrop-filter: blur(5px);
-            z-index: 3;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        /* Nav */
+
+
+#logo_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#logo {
+
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.top_navbar {
+    padding: 10px;
+    width: 100%;
+   
+    overflow: hidden;
+    background-color: rgba(50, 71, 89, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 4;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    
+    >img {
+        position: relative;
+        float: right;
+        top: 0px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    >a {
+        display: block;
+
+        float: left;
+        padding: 4px;
+        color: #f2f2f2;
+        text-align: center;
         
-            >img {
-                height: 50px;
+     
+        text-decoration: none;
+        text-decoration-color: var(--colorBlue-100);
+        text-underline-offset: 4px;
+        text-decoration-thickness: 5px;
+        font-size: 20px;
+       
+
+    }
+
+    >a:hover {
+        background-color: #ffffff77;
+        backdrop-filter: blur(10px);
+        color: black;
+    }
+
+    >a.home {
         
-            }
+        color: white;
+        padding: 0;
+        margin: 0;
+        margin-bottom: -5px;
+        height: 38px;
+    }
+
+    >a #home_icon {
+        margin-bottom: -5px;
+        color: white;
+        font-size: 40px;
         
-            >a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 5px;
-                text-decoration: underline;
-                text-decoration-color: var(--colorBlue-100);
-                text-underline-offset: 4px;
-                text-decoration-thickness: 5px;
-                font-size: 17px;
-            }
-        
-            >a:hover {
-                background-color: #ddd;
-                color: black;
-            }
-        
-            >a.active {
-                background-color: rgba(104, 104, 104, 0);
-                color: white;
-            }
-        
-            >.icon {
-                display: none;
-            }
-        
-            >.responsive {
-                background-color: rgba(255, 255, 255, 0.5);
-                backdrop-filter: blur(10px);
-                width: 100%;
-                border-radius: 0;
-            }
-        }
+        /* border-radius: 999px 0 0 999px; */
+    }
+
+
+    >.services {
+        background-color: rgba(237, 32, 35, 1);
+
+    }
+
+    >.about {
+        background-color: var(--colorBlue-100);
+    }
+
+    >.contact {
+        background-color: var(--colorOrange-100);
+        /* border-radius: 0 999px 999px 0; */
+    }
+
+
+    >a.icon {
+        display: none;
+    }
+
+    >.responsive {}
+}
+

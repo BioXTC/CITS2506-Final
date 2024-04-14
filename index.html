@@ -21,27 +21,30 @@
     <script src="assets/scripts/script.js"></script>
 </head>
 
-<body class="stroudley-regular">
+<body>
 
     <header>
-        <nav class="">
 
-            <div class="top_navbar stroudley-regular" id="topNavbar">
-                <div id="logo_container">
-                    <img src="assets\images\logo_tr_7.png" id="logo" class="">
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#"><img src="assets\images\logo_tr_7.png" id="logo" class=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                        <a class="nav-link services" href="#">Services</a>
+                        <a class="nav-link about" href="#">About</a>
+                        <a class="nav-link contact" href="#">Contact</a>
+                    </div>
                 </div>
-               
-                    <a href="index.html" class="active home"><span class="material-symbols-rounded"
-                            id="home_icon">home</span></a>
-                    <a href="services.html" class="services">Services</a>
-                    <a href="about.html" class="about">About</a>
-                    <a href="contact.html" class="contact">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                
             </div>
-
         </nav>
     </header>
     <div>
@@ -320,8 +323,11 @@
         </div>
 
         <!-- Scripts-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
             crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
