@@ -111,7 +111,7 @@ body {
     backdrop-filter: blur(5px);
     z-index: 4;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-
+    
     >img {
         position: relative;
         float: right;
@@ -123,43 +123,64 @@ body {
     >a {
         position: relative;
         float: left;
-        display: block;
+        padding: 4px;
         color: #f2f2f2;
         text-align: center;
         align-items: center;
-        padding: 7px;
+     
         text-decoration: none;
         text-decoration-color: var(--colorBlue-100);
         text-underline-offset: 4px;
         text-decoration-thickness: 5px;
         font-size: 20px;
-        margin-top: 10px;
-        border-radius: 9999px;
+       
+
     }
 
     >a:hover {
-        background-color: #ddd;
-        border-radius: 9999px;
+        background-color: #ffffff77;
+        backdrop-filter: blur(10px);
         color: black;
     }
 
-    >a.active {
-        background-color: var(--colorOrange-90);
+    >a.home {
+        
         color: white;
-
-        padding: 7px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: -5px;
+        height: 38px;
     }
+
+    >a #home_icon {
+        margin-bottom: -5px;
+        color: white;
+        font-size: 40px;
+        
+        /* border-radius: 999px 0 0 999px; */
+    }
+
+
+    >.services {
+        background-color: rgba(237, 32, 35, 1);
+
+    }
+
+    >.about {
+        background-color: var(--colorBlue-100);
+    }
+
+    >.contact {
+        background-color: var(--colorOrange-100);
+        /* border-radius: 0 999px 999px 0; */
+    }
+
 
     >.icon {
         display: none;
     }
 
-    >.responsive {
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(10px);
-        width: 100%;
-        border-radius: 0;
-    }
+    >.responsive {}
 }
 
 
@@ -404,7 +425,7 @@ body {
         position: absolute;
         left: 88.5vw;
         top: 15.5vw;
-     
+
     }
 
 
