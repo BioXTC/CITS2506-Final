@@ -82,34 +82,89 @@ body {
     width: 100%;
 }
 
+footer {
+    background-color: var(--colorBlue-100);
+    padding: 2px;
+}
+
 /* Header */
 
 /* Nav */
-#logo {
 
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        #nav_icon-1,
+        #nav_icon-2,
+        #nav_icon-3,
+        #nav_icon-4 {
+            color: white;
+            
+        }
+}
+.home:hover #nav_icon-1 {
+    color: rgba(255, 255, 255, 0.857) !important;
+    
+}
+.services:hover #nav_icon-2 {
+    color: var(--colorRed-100) !important;
+    
+}
+.about:hover #nav_icon-3 {
+    color: var(--colorBlue-100) !important;
+    
+}
+.contact:hover #nav_icon-4 {
+    color: var(--colorOrange-100) !important;
+    
+}
+#logo {
     height: auto;
     width: 100%;
     max-width: 400px;
 }
-
+.navbar-toggler {
+ margin-left: 2vw !important;
+}
 .navbar {
     position: absolute;
+    z-index: 3;
     width: 100%;
     background-color: #315b83a5;
     backdrop-filter: blur(10px);
+
+
+}
+.navbar-brand {
+    margin-right: 0;
 }
 .navbar-nav {
     >a {
-        color: white;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.8);
         padding-left: 20px;
     }
+
     >a:hover {
-        color: rgb(254, 0, 0);
+        color: rgb(255, 255, 255);
     }
+
     >a.nav-link.active {
-        color: rgb(251, 0, 0);
+        color: rgb(255, 255, 255);
+       
+        
+        
     }
-    
+
+    >a.home {}
+
+    >a.services {}
+
+    >a.about {}
+
+    >a.contact {}
+
 }
 
 /* Index containers */
@@ -162,7 +217,9 @@ body {
 #row-3 {
     margin: 0 auto;
 }
-
+#row-4 {
+    margin-bottom: 100px;
+}
 /* Index Columns */
 
 
@@ -266,14 +323,15 @@ body {
     color: var(--colorBlue-100);
 }
 
+
 .material-symbols-rounded {
-    color: rgb(0, 0, 0);
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 300,
-        'GRAD' 0,
-        'opsz' 48
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
+
 
 .acier-gris {
     font-family: "acier-bat-gris", sans-serif;
@@ -307,7 +365,7 @@ body {
 
 /* https://wavier.art/ */
 .wave-container {
-    height: 25vh;
+    height: 35vh;
     background-color: #315c83;
     position: relative;
 }
@@ -334,5 +392,34 @@ body {
 @media screen and (max-width: 800px) {
     #free_estimate {
         display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        >a.home {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+
+        }
+
+        >a.services {
+            background-color: rgba(237, 32, 35, 1);
+        }
+
+        >a.about {
+            background-color: var(--colorBlue-100);
+        }
+
+        >a.contact {
+            background-color: var(--colorOrange-100);
+        }
+
     }
 }
