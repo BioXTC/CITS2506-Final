@@ -88,13 +88,15 @@
     --colorRed-10: rgba(191, 86, 86, 0.1);
     --colorRedPrimary-100: rgb(217, 24, 40);
     --colorElms-100: rgb(0, 71, 49, 1);
+    --colorElms-90: rgb(0, 71, 49, 0.9);
+    --colorElms-80: rgb(0, 71, 49, 0.8);
 
 }
 
 html,
 body {
-width: 100%;
-height: 100%
+    width: 100%;
+    height: 100%
 }
 
 
@@ -338,9 +340,10 @@ footer {
 }
 
 #service_row-1_column-3 {
-    
+
     background-color: var(--colorOrange-30);
 }
+
 #service_row-1_column-4 {
     padding: 0;
     border: 3px solid white;
@@ -456,34 +459,38 @@ footer {
 
     }
 }
+
 /* https://coloreous.com/tools/tools_dividers_generator.html */
 .website-divider-container-410291 {
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
     height: 100%;
-  }
-  
+}
+
 .divider-img-410291 {
-      position: relative;
-      width: 500%;
-      height: 108px;
-      
-      transform: scale(1, -1);
-      top:-10px;
-      left: 0px;
-      fill: rgb(49, 92, 131)
-  }
-  .divider-img-410291-white {
+    position: relative;
+    width: 500%;
+    height: 108px;
+
+    transform: scale(1, -1);
+    top: -10px;
+    left: 0px;
+    fill: rgb(49, 92, 131)
+}
+
+.divider-img-410291-white {
     position: relative;
     width: 500%;
     height: 108px;
     transform: scale(1, -1);
-    top:-10px;
+    top: -10px;
     left: 0px;
     fill: rgb(255, 255, 255)
 }
-  .elms-mode {
-    background-color: var(--colorElms-100) !important;
+
+.elms-mode {
+    background-color: var(--colorElms-80) !important;
+    backdrop-filter: blur(10px);
     color: white;
-   
-  }
+
+}
