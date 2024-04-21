@@ -87,6 +87,7 @@
     --colorRed-20: rgba(191, 86, 86, 0.2);
     --colorRed-10: rgba(191, 86, 86, 0.1);
     --colorRedPrimary-100: rgb(217, 24, 40);
+    --colorElms-100: rgb(0, 71, 49, 1);
 
 }
 
@@ -231,12 +232,15 @@ footer {
 }
 
 /* Index Columns */
-
+#row-1_column-1,
+#row-2_column-1 {
+    background-color: var(--colorBlue-100);
+}
 
 /* Hero */
 #hero_image {
     display: block;
-    height: 50%;
+    height: 50% !important;
     width: 100%;
 }
 
@@ -245,17 +249,17 @@ footer {
     flex-direction: row;
     position: absolute;
     z-index: 5;
-    top: 58vw;
+    top: 61vw;
     left: auto;
     right: 0;
     background-color: rgba(255, 255, 255, 0.2);
     color: rgb(0, 0, 0);
     backdrop-filter: blur(10px);
-    width: 60%;
-    max-width: 425px;
-    text-align: center;
+    width: 100%;
+    /*max-width: 425px;*/
+    justify-content: center;
     font-size: 25px;
-    border-radius: 9999px 0 0 9999px;
+    /* border-radius: 9999px 0 0 9999px; */
     box-shadow:
         5px 5px 15px rgba(0, 0, 0, 0.504),
         0 5px 15px rgba(0, 0, 0, 0.243) inset;
@@ -298,12 +302,16 @@ footer {
 }
 
 /* Services */
+
+
 #service_learn-more {
-    border: 1px solid white;
+    border: 0;
+    border-radius: 0;
     margin-top: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.316);
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.316);*/
     --bs-btn-bg: var(--colorOrange-100);
     --bs-btn-border-color: var(--colorOrange-100);
+    --bs-btn-hover-bg: var(--colorBlue-100);
 }
 
 .service_card-icon {
@@ -313,22 +321,30 @@ footer {
 
 #service_card-list-1 {
     ul {
-        list-style-type: circle;
+        list-style-type: none;
     }
 
 }
 
+
 #service_row-1_column-1 {
     background-color: var(--colorBlue-100);
 }
+
 #service_row-1_column-2 {
-    background-color: var(--colorBlueSecondary-80);
+    padding: 0;
+    border: 3px solid white;
+    background-color: var(--colorBlueSecondary-30);
 }
+
 #service_row-1_column-3 {
-    background-color: var(--colorOrange-80);
+    
+    background-color: var(--colorOrange-30);
 }
 #service_row-1_column-4 {
-    background-color: var(--colorRed-100);
+    padding: 0;
+    border: 3px solid white;
+    background-color: var(--colorRed-30);
 }
 
 /*
@@ -405,31 +421,6 @@ footer {
     font-style: normal;
 }
 
-/* https://wavier.art/ */
-.wave-container {
-    height: 35vh;
-    background-color: #315c83;
-    position: relative;
-}
-
-.wave-container::before {
-    content: "";
-    width: 100%;
-    height: 15px;
-    position: absolute;
-    bottom: -0.3%;
-    left: 0;
-    background-size: auto;
-    background-repeat: repeat no-repeat;
-    background-position: 48vw bottom;
-    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 22L33 19C82 13 133 14 200 29C267 44 333 67 400 70C467 74 533 59 600 40C667 22 733 0 800 0C867 0 933 22 1000 29C1067 37 1133 29 1167 26L1200 22V134H1167C1133 134 1067 134 1000 134C933 134 867 134 800 134C733 134 667 134 600 134C533 134 467 134 400 134C333 134 267 134 200 134C133 134 67 134 33 134H0V22.332Z' fill='%23ffffff'/></svg>");
-}
-
-@media(max-width:850px) {
-    .wave-container::before {
-        height: 7.5px
-    }
-}
 
 @media screen and (max-width: 800px) {
     #free_estimate {
@@ -465,3 +456,34 @@ footer {
 
     }
 }
+/* https://coloreous.com/tools/tools_dividers_generator.html */
+.website-divider-container-410291 {
+    overflow:hidden;
+    position: relative;
+    height: 100%;
+  }
+  
+.divider-img-410291 {
+      position: relative;
+      width: 500%;
+      height: 108px;
+      
+      transform: scale(1, -1);
+      top:-10px;
+      left: 0px;
+      fill: rgb(49, 92, 131)
+  }
+  .divider-img-410291-white {
+    position: relative;
+    width: 500%;
+    height: 108px;
+    transform: scale(1, -1);
+    top:-10px;
+    left: 0px;
+    fill: rgb(255, 255, 255)
+}
+  .elms-mode {
+    background-color: var(--colorElms-100) !important;
+    color: white;
+   
+  }
