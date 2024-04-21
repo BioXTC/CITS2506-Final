@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="#"><img src="assets\images\logo_tr_7.png" id="logo" class=""></a>
+                <a class="navbar-brand" href="index.html"><img src="assets\images\logo_tr_7.png" id="logo" class=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
                                 design_services
                             </span>
                             Services</a>
-                        <a class="nav-link active about" href="about.html">
+                        <a class="nav-link active about" href="gallery.html">
                             <span class="material-symbols-rounded nav_link-icon" id="nav_icon-3">
                                 account_circle
                             </span>
@@ -61,6 +61,7 @@
         </nav>
     </header>
     <div>
+        <!--
         <div id="free_estimate">
             <span class="material-symbols-rounded">
                 phone_in_talk
@@ -69,145 +70,65 @@
                 Call for a FREE estimate today!
             </p>
         </div>
-        <img src="/assets/images/pexels-huseyn-kamaladdin-667838.jpg" id="hero_image">
-
+       --->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets\images\service_remodeling.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\images\service_residential.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets\images\service_commercial.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
-    <!-- Wavey transitionhttps://wavier.art/ --->
-    <div class="wave-container">
-        <!-- Grid Container -->
-        <div class="container-fluid d-flex flex-column" id="container-1">
 
-            <!-- Row 1 -->
-            <div class="row" id="row-1">
-                <div class="col">
-                    <sl-carousel class="carousel-thumbnails" navigation loop>
-                        <sl-carousel-item>
-                            <img alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                        </sl-carousel-item>
-                        <sl-carousel-item>
-                            <img alt="A waterfall in the middle of a forest (by Thomas Kelly on Unsplash)"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                        </sl-carousel-item>
-                        <sl-carousel-item>
-                            <img alt="The sun is setting over a lavender field (by Leonard Cotte on Unsplash)"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                        </sl-carousel-item>
-                        <sl-carousel-item>
-                            <img alt="A field of grass with the sun setting in the background (by Sapan Patel on Unsplash)"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                        </sl-carousel-item>
-                        <sl-carousel-item>
-                            <img alt="A scenic view of a mountain with clouds rolling in (by V2osk on Unsplash)"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                        </sl-carousel-item>
-                    </sl-carousel>
+    <!-- Grid Container -->
+    <div class="container-fluid d-flex flex-column" id="container-1">
 
-                    <div class="thumbnails">
-                        <div class="thumbnails__scroller">
-                            <img alt="Thumbnail by 1" class="thumbnails__image active"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                            <img alt="Thumbnail by 2" class="thumbnails__image"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                            <img alt="Thumbnail by 3" class="thumbnails__image"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                            <img alt="Thumbnail by 4" class="thumbnails__image"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                            <img alt="Thumbnail by 5" class="thumbnails__image"
-                                src="assets\images\pexels-max-vakhtbovycn-7046150.jpg" />
-                        </div>
-                    </div>
-
-                    <style>
-                        .carousel-thumbnails {
-                            --slide-aspect-ratio: 3 / 2;
-                        }
-
-                        .thumbnails {
-                            display: flex;
-                            justify-content: center;
-                        }
-
-                        .thumbnails__scroller {
-                            display: flex;
-                            gap: var(--sl-spacing-small);
-                            overflow-x: auto;
-                            scrollbar-width: none;
-                            scroll-behavior: smooth;
-                            scroll-padding: var(--sl-spacing-small);
-                        }
-
-                        .thumbnails__scroller::-webkit-scrollbar {
-                            display: none;
-                        }
-
-                        .thumbnails__image {
-                            width: 64px;
-                            height: 64px;
-                            object-fit: cover;
-
-                            opacity: 0.3;
-                            will-change: opacity;
-                            transition: 250ms opacity;
-
-                            cursor: pointer;
-                        }
-
-                        .thumbnails__image.active {
-                            opacity: 1;
-                        }
-                    </style>
-
-                    <script>
-                        {
-                            const carousel = document.querySelector('.carousel-thumbnails');
-                            const scroller = document.querySelector('.thumbnails__scroller');
-                            const thumbnails = document.querySelectorAll('.thumbnails__image');
-
-                            scroller.addEventListener('click', e => {
-                                const target = e.target;
-
-                                if (target.matches('.thumbnails__image')) {
-                                    const index = [...thumbnails].indexOf(target);
-                                    carousel.goToSlide(index);
-                                }
-                            });
-
-                            carousel.addEventListener('sl-slide-change', e => {
-                                const slideIndex = e.detail.index;
-
-                                [...thumbnails].forEach((thumb, i) => {
-                                    thumb.classList.toggle('active', i === slideIndex);
-                                    if (i === slideIndex) {
-                                        thumb.scrollIntoView({
-                                            block: 'nearest'
-                                        });
-                                    }
-                                });
-                            });
-                        }
-                    </script>
-
-                </div>
-
-                <!-- Scripts-->
-                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-                    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-                    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-                    crossorigin="anonymous"></script>
-                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-                <script>
-                    AOS.init();
-                </script>
-                <script src="assets/scripts/script.js"></script>
-                <!-- Scripts End-->
+        <!-- Row 1 -->
+        <div class="row" id="gallery_row-1">
+            <div class="col">
+                <h1 class="acier-solid text-center text-light">Our Work</h1>
+            </div>
+        </div>
+        <div class="row" id="gallery_row-2">
+            <div class="col-md-6" id="gallery_row-2_column-1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gxMUrIh5FtI?si=bcCWn0HozQAWYixJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 text center" id="gallery_row-2_column-2">
+                hi
+            </div>
+        </div>
+        <!-- Scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="assets/scripts/script.js"></script>
+        <!-- Scripts End-->
 
 
-                <footer class="text-center text-light d-flex justify-content-center">
-                    <p class="m-0">Perfect Painting- Since 1987</p>
-                </footer>
+        <footer class="text-center text-light d-flex justify-content-center">
+            <p class="m-0">Perfect Painting- Since 1987</p>
+        </footer>
 
 </body>
 

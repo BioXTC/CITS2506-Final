@@ -87,9 +87,9 @@
     --colorRed-20: rgba(191, 86, 86, 0.2);
     --colorRed-10: rgba(191, 86, 86, 0.1);
     --colorRedPrimary-100: rgb(217, 24, 40);
-    --colorElms-100: rgb(0, 71, 49, 1);
-    --colorElms-90: rgb(0, 71, 49, 0.9);
-    --colorElms-80: rgb(0, 71, 49, 0.8);
+    --colorElms-100: rgb(0, 71, 49);
+    --colorElms-90: rgba(0, 71, 49, 0.9);
+    --colorElms-80: rgba(0, 71, 49, 0.8);
 
 }
 
@@ -350,6 +350,7 @@ footer {
     background-color: var(--colorRed-30);
 }
 
+
 /*
  #service_row-1_column-2 {
     background-color: var(--colorBlue-90);
@@ -361,6 +362,11 @@ footer {
     background-color: var(--colorRed-100);
 }
 */
+
+/* Gallery */
+#gallery_row-1 {
+    background-color: var(--colorBlue-100);
+}
 
 /* Utility */
 .background-blue {
@@ -489,8 +495,22 @@ footer {
 }
 
 .elms-mode {
-    background-color: var(--colorElms-80) !important;
+    background-color: var(--colorElms-100) !important;
     backdrop-filter: blur(10px);
     color: white;
 
+}
+
+.elms-mode-services {
+    background-color: white !important;
+    padding-top: 50px;
+    
+}
+
+.light-text-elms {
+    color: var(--colorElms-100) !important;
+}
+
+.light-text {
+    color: white;
 }
