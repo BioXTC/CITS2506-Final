@@ -28,7 +28,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
-                <a class="navbar-brand ms-2" href="index.html"><img src="assets\images\logo_tr_7.png" id="logo" class=""></a>
+                <a class="navbar-brand ms-2" href="index.html"><img src="assets\images\logo_tr_7.png" id="logo"
+                        class=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -57,13 +58,15 @@
                             </span>
                             Contact</a>
                         <!-- https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp -->
-                        <span class="nav-link d-block" onclick="elmsMode()"><img src="/assets/images/custom-header-logo.png" height="50px"></img></span>
+                        <span class="nav-link d-block" onclick="elmsMode()"><img
+                                src="/assets/images/custom-header-logo.png" height="50px"></img></span>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <div>
+        <!--
         <div id="free_estimate">
             <span class="material-symbols-rounded">
                 phone_in_talk
@@ -72,154 +75,139 @@
                 Call for a FREE estimate today!
             </p>
         </div>
+        -->
         <img src="/assets/images/pexels-huseyn-kamaladdin-667838.jpg" id="hero_image">
 
     </div>
     <!-- Grid Container -->
-    <div class="container-fluid d-flex flex-column" id="container-1">
 
-        <!-- Row 1 -->
-        <div class="row" id="row-1">
-            <div class="col">
 
-            </div>
+    <!-- Row 1 -->
 
-            <!-- Row 1 Col 1-->
-            <div class="col-sm-12" id="row-1_column-1">
+    <!-- Row 1 Col 1-->
 
-                <!-- Why Us Tab Panel-->
-                <sl-tab-group class="tab_panel">
-                    <sl-tab slot="nav" panel="general">Quality First</sl-tab>
-                    <sl-tab slot="nav" panel="custom">Fully Transparent Pricing</sl-tab>
-                    <sl-tab slot="nav" panel="advanced">On-Time Completion</sl-tab>
-                    <sl-tab-panel name="general">
-                        <!-- Quality First Card -->
-                        <div class="container-fluid whyUs_card-container">
+    <!-- Why Us Tab Panel-->
+    <div class="background-blue">
+        <sl-tab-group class="tab_panel">
+            <sl-tab slot="nav" panel="general">Quality First</sl-tab>
+            <sl-tab slot="nav" panel="custom">Fully Transparent Pricing</sl-tab>
+            <sl-tab slot="nav" panel="advanced">On-Time Completion</sl-tab>
+            <sl-tab-panel name="general">
+                <!-- Quality First Card -->
+                <div class="container-fluid">
 
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-lg-6">
-                                        <img src="assets\images\quality_splash.jpg" class="img-fluid quality_image"
-                                            alt="...">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <img src="assets\images\quality_splash.jpg" class="img-fluid quality_image" alt="...">
+                            </div>
+                            <div class="col-lg-6 background-blue d-flex justify-items-center">
+                                <div class="card-body text-light">
+                                    <div class="container-fluid">
+                                        <h5 class="card-title text-center h1 acier-solid">Quality First</h5>
+                                        <p class="card-text fs-5">As one of the nation's premier painting
+                                            companies, our reputation is built on a
+                                            steadfast dedication to delivering unparalleled painting
+                                            services.
+                                        </p>
+                                        <p class="card-text fs-5">
+                                            This commitment
+                                            begins with our exceptional customer service team, who ensure
+                                            that
+                                            your experience
+
+                                        </p>
                                     </div>
-                                    <div class="col-lg-6 background-blue d-flex justify-items-center">
-                                        <div class="card-body text-light">
-                                            <div class="container-fluid">
-                                                <h5 class="card-title text-center h1 acier-solid">Quality First</h5>
-                                                <p class="card-text fs-5">As one of the nation's premier painting
-                                                    companies, our reputation is built on a
-                                                    steadfast dedication to delivering unparalleled painting
-                                                    services.
-                                                </p>
-                                                <p class="card-text fs-5">
-                                                    This commitment
-                                                    begins with our exceptional customer service team, who ensure
-                                                    that
-                                                    your experience
 
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
-                    </sl-tab-panel>
-                    <sl-tab-panel name="custom">
-                        <!-- Transparent Pricing Card -->
-                        <div class="container-fluid whyUs_card-container">
-
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-lg-6">
-                                        <img src="assets\images\estimate.jpg" class="img-fluid quality_image" alt="...">
-                                    </div>
-                                    <div class="col-lg-6 background-orange d-flex justify-items-center">
-                                        <div class="card-body text-light">
-                                            <div class="container-fluid">
-                                                <h5 class="card-title text-center h1 acier-solid">Transparent
-                                                    Pricing</h5>
-                                                <p class="card-text fs-5">As one of the nation's premier painting
-                                                    companies, our reputation is built on a
-                                                    steadfast dedication to delivering unparalleled painting
-                                                    services.
-                                                </p>
-                                                <p class="card-text fs-5">
-                                                    This commitment
-                                                    begins with our exceptional customer service team, who ensure
-                                                    that
-                                                    your experience
-
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </sl-tab-panel>
-                    <sl-tab-panel name="advanced">
-                        <!-- On Time Card -->
-                        <div class="container-fluid whyUs_card-container">
-
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-lg-6">
-                                        <img src="/assets/images/index_on-time-3.jpg" class="img-fluid quality_image"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-lg-6 background-red d-flex justify-items-center">
-                                        <div class="card-body text-light">
-                                            <div class="container-fluid">
-                                                <h5 class="card-title text-center h1 acier-solid">On Time</h5>
-                                                <p class="card-text fs-5">As one of the nation's premier painting
-                                                    companies, our reputation is built on a
-                                                    steadfast dedication to delivering unparalleled painting
-                                                    services.
-                                                </p>
-                                                <p class="card-text fs-5">
-                                                    This commitment
-                                                    begins with our exceptional customer service team, who ensure
-                                                    that
-                                                    your experience
-
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </sl-tab-panel>
-
-                </sl-tab-group>
-                <!-- Why Us Tab Panel End -->
-            </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="row website-divider-container-410291" id="row-2">
-            <!-- Row 2 Col 1-->
-            <div class="col-12 text-center d-flex justify-content-center" id="row-2_column-1">
-                <div class="d-flex flex-row justify-content-center" id="services_header">
-                    <span class="material-symbols-rounded color-blue animate__animated animate__fadeIn d-none">
-                        star
-                    </span>
-                    <h1 class="acier-solid fs-1 light-text" id="ourServices">Our Services</h1><span
-                        class="material-symbols-rounded color-blue animate__animated animate__fadeIn d-none">
-                        star
-                    </span>
-
+                    </div>
                 </div>
-            </div>
+            </sl-tab-panel>
+            <sl-tab-panel name="custom">
+                <!-- Transparent Pricing Card -->
+                <div class="container-fluid">
 
-        </div>
-        <!-- Index Our Services divider start-->
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <img src="assets\images\estimate.jpg" class="img-fluid quality_image" alt="...">
+                            </div>
+                            <div class="col-lg-6 background-orange d-flex justify-items-center">
+                                <div class="card-body text-light">
+                                    <div class="container-fluid">
+                                        <h5 class="card-title text-center h1 acier-solid">Transparent
+                                            Pricing</h5>
+                                        <p class="card-text fs-5">As one of the nation's premier painting
+                                            companies, our reputation is built on a
+                                            steadfast dedication to delivering unparalleled painting
+                                            services.
+                                        </p>
+                                        <p class="card-text fs-5">
+                                            This commitment
+                                            begins with our exceptional customer service team, who ensure
+                                            that
+                                            your experience
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sl-tab-panel>
+            <sl-tab-panel name="advanced">
+                <!-- On Time Card -->
+                <div class="container-fluid whyUs_card-container">
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <img src="/assets/images/index_on-time-3.jpg" class="img-fluid quality_image" alt="...">
+                            </div>
+                            <div class="col-lg-6 background-red d-flex justify-items-center">
+                                <div class="card-body text-light">
+                                    <div class="container-fluid">
+                                        <h5 class="card-title text-center h1 acier-solid">On Time</h5>
+                                        <p class="card-text fs-5">As one of the nation's premier painting
+                                            companies, our reputation is built on a
+                                            steadfast dedication to delivering unparalleled painting
+                                            services.
+                                        </p>
+                                        <p class="card-text fs-5">
+                                            This commitment
+                                            begins with our exceptional customer service team, who ensure
+                                            that
+                                            your experience
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sl-tab-panel>
+
+        </sl-tab-group>
+        <!-- Why Us Tab Panel End -->
+
+    </div>
+    
+
+
+
+    <!-- Row 2 -->
+    <div class="row website-divider-container-410291" id="row-2">
+        <!-- Row 2 Col 1-->
+
+    </div>
+    <!-- Index Our Services divider start-->
+    <div class="container-fluid">
         <svg xmlns="http://www.w3.org/2000/svg" class="divider-img-410291" viewBox="0 0 1080 137"
             preserveAspectRatio="none">
             <path
@@ -232,110 +220,106 @@
                 d="M 0,45.10182 C 216.27861,-66.146913 327.90348,63.09813 416.42665,63.52904 504.94982,63.95995 530.42054,22.125806 615.37532,25.210412 700.33012,28.295019 790.77619,132.60682 1080,31.125744 V 137 H 0 Z"
                 style="opacity:0.25"></path>
         </svg>
-        <!-- Index Our Services divider end-->
-        <!-- Row 3 -->
-        <div class="row justify-content-center justify-items-center" id="row-3">
+    </div>
+    <!-- Index Our Services divider end-->
+    <!-- Row 3 -->
+    <div class="row justify-content-center justify-items-center" id="row-3">
 
-            <!-- Row 3 Col 1-->
-            <div class="col-sm-4" id="row-3_column-1">
-                <!-- Card 1 -->
-                <div class="service_card mt-2" id="service_card-1" data-aos="fade-right">
-                    <div class="service_card-icon " data-aos="fade-up">
-                        <span class="material-symbols-rounded" style="color:rgb(56, 98, 135);">house</span>
-                    </div>
-                    <h2 class="text-center">Residential</h2>
-                    <p>
-                        [placeholder] Our team of experienced professionals is dedicated to providing high-quality
-                        painting solutions tailored to your preferences and requirements. Whether you're looking to
-                        revamp your living room with vibrant tones or create a tranquil bedroom ambiance, we have
-                        the
-                        expertise and tools to transform your space efficiently and effectively.
-                    </p>
+        <!-- Row 3 Col 1-->
+        <div class="col-sm-4" id="row-3_column-1">
+            <!-- Card 1 -->
+            <div class="service_card mt-2" id="service_card-1">
+                <div class="service_card-icon">
+                    <span class="material-symbols-rounded" style="color:rgb(56, 98, 135);">house</span>
                 </div>
-                <!-- Card 1 End -->
+                <h2 class="text-center">Residential</h2>
+                <p>
+                    [placeholder] Our team of experienced professionals is dedicated to providing high-quality
+                    painting solutions tailored to your preferences and requirements. Whether you're looking to
+                    revamp your living room with vibrant tones or create a tranquil bedroom ambiance, we have
+                    the
+                    expertise and tools to transform your space efficiently and effectively.
+                </p>
             </div>
-            <!-- Row 3 Col 2-->
-            <div class="col-sm-4" id="row-3_column-2">
-                <!-- Card 2 -->
-                <div class="service_card" id="service_card-2" data-aos="fade-up">
-                    <div class="service_card-icon" data-aos="fade-up">
-                        <span class="material-symbols-rounded" style="color:rgb(224, 103, 60);">business</span>
-                    </div>
-                    <h2 class="text-center">Commercial</h2>
-                    <p>
-                        [placeholder] Our skilled painters are equipped to handle projects of any scale, from small
-                        offices to large corporate buildings, ensuring minimal disruption to your daily operations.
-                        We
-                        prioritize a meticulous finish, using industry-leading products for a durable and visually
-                        appealing result. Our services include interior and exterior painting, wallpaper removal,
-                        and
-                        specialty coatings, all customized to meet the unique needs of your business.
-                    </p>
+            <!-- Card 1 End -->
+        </div>
+        <!-- Row 3 Col 2-->
+        <div class="col-sm-4" id="row-3_column-2">
+            <!-- Card 2 -->
+            <div class="service_card" id="service_card-2">
+                <div class="service_card-icon">
+                    <span class="material-symbols-rounded" style="color:rgb(224, 103, 60);">business</span>
                 </div>
-                <!-- Card 2 End -->
+                <h2 class="text-center">Commercial</h2>
+                <p>
+                    [placeholder] Our skilled painters are equipped to handle projects of any scale, from small
+                    offices to large corporate buildings, ensuring minimal disruption to your daily operations.
+                    We
+                    prioritize a meticulous finish, using industry-leading products for a durable and visually
+                    appealing result. Our services include interior and exterior painting, wallpaper removal,
+                    and
+                    specialty coatings, all customized to meet the unique needs of your business.
+                </p>
             </div>
-            <!-- Row 3 Col 3-->
-            <div class="col-sm-4" id="row-3_column-3">
-                <!-- Card 3 -->
-                <div class="service_card mt-2" id="service_card-3" data-aos="fade-left">
-                    <div class="service_card-icon" data-aos="fade-up">
-                        <span class="material-symbols-rounded" style="color:#401D10;">format_paint</span>
-                    </div>
-                    <h2 class="text-center">Remodeling</h2>
-                    <p>
-                        [placeholder]
-                        Our experienced remodelers are committed to turning your vision into reality, whether it's a
-                        modern kitchen makeover, a luxurious bathroom upgrade, or a full home renovation. We handle
-                        every aspect of the remodeling process from design to execution, ensuring a seamless and
-                        stress-free experience.
-                    </p>
+            <!-- Card 2 End -->
+        </div>
+        <!-- Row 3 Col 3-->
+        <div class="col-sm-4" id="row-3_column-3">
+            <!-- Card 3 -->
+            <div class="service_card mt-2" id="service_card-3">
+                <div class="service_card-icon">
+                    <span class="material-symbols-rounded" style="color:#401D10;">format_paint</span>
                 </div>
-                <!-- Card 3 End -->
+                <h2 class="text-center">Remodeling</h2>
+                <p>
+                    [placeholder]
+                    Our experienced remodelers are committed to turning your vision into reality, whether it's a
+                    modern kitchen makeover, a luxurious bathroom upgrade, or a full home renovation. We handle
+                    every aspect of the remodeling process from design to execution, ensuring a seamless and
+                    stress-free experience.
+                </p>
             </div>
-        </div>
-
-        <!-- Row 4-->
-        <div class="row" id="row-4">
-            <!-- Row 1 Col 1-->
-            <div class="col-12 text-center" id="row-4_column-1">
-                <!--Service Learn More Button-->
-                <a class="btn btn-primary" href="services.html#service_row-1" role="button"
-                    id="service_learn-more">Learn More!</a>
-            </div>
-        </div>
-
-        <!-- Row 5 -->
-        <div class="row" id="row-5">
-            <!-- Row 5 Col 1-->
-            <div class="col-12 text-center" id="row-5_column-1">
-                <!--[placeholder]-->
-            </div>
-        </div>
-
-        <!-- Row 6 -->
-        <div class="row" id="row-6">
-            <!-- Row 6 Col 1-->
-            <div class="col-sm-6" id="row-6_column-1">
-                <!--[placeholder]-->
-            </div>
-            <!-- Row 6 Col 2-->
-            <div class="col-sm-6 " id="row-6_column-2">
-                <!--[placeholder]-->
-            </div>
-        </div>
-
-        <!-- Row 7 -->
-        <div class="row" id="row-7">
-            <!-- Row 7 Col 1-->
-            <div class="col-sm-6 text-center" id="row-7_column-1">
-                <!--[placeholder]-->
-            </div>
-            <!-- Row 7 Col 2-->
-            <div class="col-sm-6" id="row-7_column-2">
-
-            </div>
+            <!-- Card 3 End -->
         </div>
     </div>
+
+
+    <!--Service Learn More Button-->
+    <a class="btn btn-primary" href="services.html#service_row-1" role="button" id="service_learn-more">Learn
+        More!</a>
+
+    <!-- Row 5 -->
+    <div class="row" id="row-5">
+        <!-- Row 5 Col 1-->
+        <div class="col-12 text-center" id="row-5_column-1">
+            <!--[placeholder]-->
+        </div>
+    </div>
+
+    <!-- Row 6 -->
+    <div class="row" id="row-6">
+        <!-- Row 6 Col 1-->
+        <div class="col-sm-6" id="row-6_column-1">
+            <!--[placeholder]-->
+        </div>
+        <!-- Row 6 Col 2-->
+        <div class="col-sm-6 " id="row-6_column-2">
+            <!--[placeholder]-->
+        </div>
+    </div>
+
+    <!-- Row 7 -->
+    <div class="row" id="row-7">
+        <!-- Row 7 Col 1-->
+        <div class="col-sm-6 text-center" id="row-7_column-1">
+            <!--[placeholder]-->
+        </div>
+        <!-- Row 7 Col 2-->
+        <div class="col-sm-6" id="row-7_column-2">
+
+        </div>
+    </div>
+
 
     <!-- Scripts-->
 
@@ -346,7 +330,7 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="/assets/scripts/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
