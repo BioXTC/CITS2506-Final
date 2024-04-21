@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
-                <a class="navbar-brand ms-2" href="index.html"><img src="assets\images\logo_tr_7.png" id="logo"
+                <a class="navbar-brand ms-2" href="index.html"><img src="/assets/images/logo_tr_7.png" id="logo"
                         class=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -59,12 +59,13 @@
                             Contact</a>
                         <!-- https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp -->
                         <span class="nav-link d-block" onclick="elmsMode()"><img
-                                src="/assets/images/custom-header-logo.png" height="50px"></img></span>
+                                src="/assets/images/custom-header-logo.png" height="50"></span>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+    <!--Hero Image-->
     <div>
         <!--
         <div id="free_estimate">
@@ -77,17 +78,10 @@
         </div>
         -->
         <img src="/assets/images/pexels-huseyn-kamaladdin-667838.jpg" id="hero_image">
-
     </div>
-    <!-- Grid Container -->
-
-
-    <!-- Row 1 -->
-
-    <!-- Row 1 Col 1-->
-
+    <!--Hero Image End-->
     <!-- Why Us Tab Panel-->
-    <div class="background-blue">
+    <div id="tab-group_container">
         <sl-tab-group class="tab_panel">
             <sl-tab slot="nav" panel="general">Quality First</sl-tab>
             <sl-tab slot="nav" panel="custom">Fully Transparent Pricing</sl-tab>
@@ -132,7 +126,7 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-lg-6">
-                                <img src="assets\images\estimate.jpg" class="img-fluid quality_image" alt="...">
+                                <img src="/assets/images/estimate.jpg" class="img-fluid quality_image" alt="...">
                             </div>
                             <div class="col-lg-6 background-orange d-flex justify-items-center">
                                 <div class="card-body text-light">
@@ -197,7 +191,7 @@
         <!-- Why Us Tab Panel End -->
 
     </div>
-    
+
 
 
 
@@ -223,71 +217,75 @@
     </div>
     <!-- Index Our Services divider end-->
     <!-- Row 3 -->
-    <div class="row justify-content-center justify-items-center" id="row-3">
+    <div class="container-fluid">
+        <div class="row justify-content-center justify-items-center" id="row-3">
 
-        <!-- Row 3 Col 1-->
-        <div class="col-sm-4" id="row-3_column-1">
-            <!-- Card 1 -->
-            <div class="service_card mt-2" id="service_card-1">
-                <div class="service_card-icon">
-                    <span class="material-symbols-rounded" style="color:rgb(56, 98, 135);">house</span>
+            <!-- Row 3 Col 1-->
+            <div class="col-sm-4" id="row-3_column-1">
+                <!-- Card 1 -->
+
+                <div class="service_card" id="service_card-1">
+                    <div class="service_card-icon">
+                        <span class="material-symbols-rounded" style="color:rgb(56, 98, 135);">house</span>
+                    </div>
+                    <h2 class="text-center">Residential</h2>
+                    <p>
+                        [placeholder] Our team of experienced professionals is dedicated to providing high-quality
+                        painting solutions tailored to your preferences and requirements. Whether you're looking to
+                        revamp your living room with vibrant tones or create a tranquil bedroom ambiance, we have
+                        the
+                        expertise and tools to transform your space efficiently and effectively.
+                    </p>
                 </div>
-                <h2 class="text-center">Residential</h2>
-                <p>
-                    [placeholder] Our team of experienced professionals is dedicated to providing high-quality
-                    painting solutions tailored to your preferences and requirements. Whether you're looking to
-                    revamp your living room with vibrant tones or create a tranquil bedroom ambiance, we have
-                    the
-                    expertise and tools to transform your space efficiently and effectively.
-                </p>
+                <!-- Card 1 End -->
+
             </div>
-            <!-- Card 1 End -->
-        </div>
-        <!-- Row 3 Col 2-->
-        <div class="col-sm-4" id="row-3_column-2">
-            <!-- Card 2 -->
-            <div class="service_card" id="service_card-2">
-                <div class="service_card-icon">
-                    <span class="material-symbols-rounded" style="color:rgb(224, 103, 60);">business</span>
+            <!-- Row 3 Col 2-->
+            <div class="col-sm-4" id="row-3_column-2">
+                <!-- Card 2 -->
+                <div class="service_card" id="service_card-2">
+                    <div class="service_card-icon">
+                        <span class="material-symbols-rounded" style="color:rgb(224, 103, 60);">business</span>
+                    </div>
+                    <h2 class="text-center">Commercial</h2>
+                    <p>
+                        [placeholder] Our skilled painters are equipped to handle projects of any scale, from small
+                        offices to large corporate buildings, ensuring minimal disruption to your daily operations.
+                        We
+                        prioritize a meticulous finish, using industry-leading products for a durable and visually
+                        appealing result. Our services include interior and exterior painting, wallpaper removal,
+                        and
+                        specialty coatings, all customized to meet the unique needs of your business.
+                    </p>
                 </div>
-                <h2 class="text-center">Commercial</h2>
-                <p>
-                    [placeholder] Our skilled painters are equipped to handle projects of any scale, from small
-                    offices to large corporate buildings, ensuring minimal disruption to your daily operations.
-                    We
-                    prioritize a meticulous finish, using industry-leading products for a durable and visually
-                    appealing result. Our services include interior and exterior painting, wallpaper removal,
-                    and
-                    specialty coatings, all customized to meet the unique needs of your business.
-                </p>
+                <!-- Card 2 End -->
             </div>
-            <!-- Card 2 End -->
-        </div>
-        <!-- Row 3 Col 3-->
-        <div class="col-sm-4" id="row-3_column-3">
-            <!-- Card 3 -->
-            <div class="service_card mt-2" id="service_card-3">
-                <div class="service_card-icon">
-                    <span class="material-symbols-rounded" style="color:#401D10;">format_paint</span>
+            <!-- Row 3 Col 3-->
+            <div class="col-sm-4" id="row-3_column-3">
+                <!-- Card 3 -->
+                <div class="service_card" id="service_card-3">
+                    <div class="service_card-icon">
+                        <span class="material-symbols-rounded" style="color:#401D10;">format_paint</span>
+                    </div>
+                    <h2 class="text-center">Remodeling</h2>
+                    <p>
+                        [placeholder]
+                        Our experienced remodelers are committed to turning your vision into reality, whether it's a
+                        modern kitchen makeover, a luxurious bathroom upgrade, or a full home renovation. We handle
+                        every aspect of the remodeling process from design to execution, ensuring a seamless and
+                        stress-free experience.
+                    </p>
                 </div>
-                <h2 class="text-center">Remodeling</h2>
-                <p>
-                    [placeholder]
-                    Our experienced remodelers are committed to turning your vision into reality, whether it's a
-                    modern kitchen makeover, a luxurious bathroom upgrade, or a full home renovation. We handle
-                    every aspect of the remodeling process from design to execution, ensuring a seamless and
-                    stress-free experience.
-                </p>
+                <!-- Card 3 End -->
             </div>
-            <!-- Card 3 End -->
         </div>
     </div>
 
-
     <!--Service Learn More Button-->
+    <div class="container-fluid d-flex justify-content-center mb-5">
     <a class="btn btn-primary" href="services.html#service_row-1" role="button" id="service_learn-more">Learn
         More!</a>
-
+    </div>
     <!-- Row 5 -->
     <div class="row" id="row-5">
         <!-- Row 5 Col 1-->
