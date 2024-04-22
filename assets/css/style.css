@@ -102,13 +102,18 @@
 html,
 body {
     width: 100%;
+    height: auto;
     margin: 0;
     overflow-x: hidden;
 }
-
+body {
+    background-image: linear-gradient(to bottom, #004731, #00402c, #003828, #013123, #012a1e);
+    color: white;
+}
 footer {
-    background-color: var(--colorBlue-100);
+    
     padding: 2px;
+    border-top: 3px solid;
 }
 
 /* Header */
@@ -164,10 +169,10 @@ footer {
 }
 
 .navbar {
-    position: absolute;
+ 
     z-index: 3;
     width: 100%;
-    background-color: #315b83a5;
+    /* background-color: var(--colorElms-100); */
     backdrop-filter: blur(10px);
 
 
@@ -219,7 +224,7 @@ footer {
 
 /* Index */
 #tab-group_container {
-    background-color: var(--colorBlue-100);
+    /* background-color: var(--colorElms-100); */
 }
 
 /* Index Rows */
@@ -242,7 +247,7 @@ footer {
 #row-2_column-1 {
     padding-right: 0 !important;
     
-  background-color: pink !important;
+
     
 }
 #row-1_column-1 {
@@ -250,10 +255,14 @@ footer {
    
 }
 /* Hero */
-#hero_image {
+.hero_image {
+    background-image: url("/assets/images/hero-alt-3.jpg");
     display: block;
-    height: 50% !important;
-    width: 100%;
+    height: 800px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*
@@ -318,6 +327,15 @@ footer {
 
 /* Services */
 
+#ourServices {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+
+    
+}
+#services_button-container {
+    background-color: var(--colorElms-100);
+}
 
 #service_learn-more {
     border: 0;
@@ -346,24 +364,19 @@ footer {
 
 
 #service_row-1_column-1 {
-    background-color: var(--colorBlue-100);
+    background-color: var(--colorRed-100);
 }
 
 #service_row-1_column-2 {
     padding: 0;
     border: 3px solid white;
-    background-color: var(--colorBlueSecondary-30);
-}
-
-#service_row-1_column-3 {
-
-    background-color: var(--colorOrange-30);
+   
 }
 
 #service_row-1_column-4 {
     padding: 0;
-    border: 3px solid white;
-    background-color: var(--colorRed-30);
+    border-top: 3px solid white;
+    
 }
 
 
@@ -381,18 +394,40 @@ footer {
 
 /* Gallery */
 #gallery_row-1 {
+    background-color: var(--colorElms-100);
+}
+#gallery_row-1_column-1 {
     background-color: var(--colorBlue-100);
+    border-bottom: 3px solid white;
 }
 .gallery_iframe-video {
     width: 100%;
     min-height: 350px;
     aspect-ratio: 16 / 9;
-    background-color: var(--colorBlue-100);
+    background-color: var(--colorElms-100);
     >iframe {
         width: 100%;
         height: 100%;
     }
 }
+#ourWork {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+/* Contact/estimate */
+#contactUs {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    
+}
+
+#contact_row-1_column-1 {
+    background-color: var(--colorOrange-100);
+    border-bottom: 3px solid white;
+}
+
 /* Utility */
 .background-blue {
     background-color: var(--colorBlueSecondary-100);
@@ -503,9 +538,9 @@ footer {
     width: 100%;
     height: 108px;
     transform: scale(1, -1);
-    top: 0px;
+    top: -32px;
     left: 0px;
-    fill: rgb(49, 92, 131)
+    fill: white;
 }
 
 .divider-img-410291-white {
@@ -540,9 +575,14 @@ footer {
     color: white;
 }
 
-#gallery_caroseul {
-    margin-left: 20px !important;
-    
+.color_orange-100 {
+    background-image: linear-gradient(to left top, #e0673c, #cd5c34, #ba522d, #a84825, #963e1e);
+}
+.color_blue-100 {
+    background-image: linear-gradient(to left top, #315c83, #2c5375, #284a68, #23415b, #1f384e);
+}
+.color_red-100 {
+    background-image: linear-gradient(to left top, #bf5656, #ac4d4d, #9a4444, #883b3b, #773232);
 }
 
 /* https://web3forms.com/templates/basic-html-contact-form */
@@ -552,6 +592,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 3rem 1rem;
+    
   }
   
   .contact-intro > * + * {
@@ -568,12 +609,13 @@ footer {
   .contact-description {
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
+    margin: 0;
   }
   
   .form-group-container {
     display: grid;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   
   .form-group {
@@ -613,11 +655,14 @@ footer {
   }
   
   .form-submit {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
     margin-top: 1.2rem;
     background-color: var(--colorOrange-100);
     color: #fff;
     padding: 13px 5px;
     border-radius: 0.375rem;
+
   }
   

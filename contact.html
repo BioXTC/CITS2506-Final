@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PP: Contact</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="https://use.typekit.net/sic8eua.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -74,155 +74,167 @@
     </div>
 
     <!-- Grid Container -->
-    <div class="container-fluid d-flex flex-column" id="container-1">
+    <div class="container-fluid ms-auto" id="container-1">
+        <div class="row">
+            <div class="col-12" id="contact_row-1_column-1">
+                <div>
+                    <h1 class="acier-solid text-center text-light mt-2 pb-2" id="contactUs">Contact Us</h1>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
 
-        <!-- Row 1 -->
-        <div class="row" id="row-1">
-            <div class="col-md-8">
-                <!-- Contact Form (functional) https://web3forms.com/ -->
-                <section class="contact-section">
-                    <div class="contact-intro">
-                        <h2 class="contact-title">Request an estimate</h2>
-                        <p class="contact-description">
-                            Fill out the form below and we'll get back to you as soon as possible.
-                        </p>
-                    </div>
 
-                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <div class="col-md-8 d-flex justify-content-end">
+                    <!-- Contact Form (functional) https://web3forms.com/ -->
+                    <section class="contact-section">
+                        <div class="contact-intro">
+                            <h2 class="contact-title">Request an estimate</h2>
+                            <p class="contact-description">
+                                Fill out the form below and we'll get back to you as soon as possible.
+                            </p>
+                        </div>
 
-                        <input type="hidden" name="access_key" value="5b1a9753-1872-467b-ab35-1cc06615442d" />
-                        <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-                        <input type="hidden" name="from_name" value="My Website" />
-                        <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
-                        <div class="form-group-container">
-                            <div class="form-group">
-                                <label for="name" class="form-label">Name</label>
-                                <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+                            <input type="hidden" name="access_key" value="5b1a9753-1872-467b-ab35-1cc06615442d" />
+                            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                            <input type="hidden" name="from_name" value="My Website" />
+                            <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+                            <div class="form-group-container">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input id="name" name="name" class="form-input" placeholder="Your name"
+                                        type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input id="email" name="email" class="form-input" placeholder="Your email"
+                                        type="email" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789"
+                                        type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-textarea" id="message" name="message"
+                                        placeholder="Your message"></textarea>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email</label>
-                                <input id="email" name="email" class="form-input" placeholder="Your email"
-                                    type="email" />
-                            </div>
-                            <div class="form-group">
-                                <label for="phone" class="form-label">Phone</label>
-                                <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789"
-                                    type="text" />
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-textarea" id="message" name="message"
-                                    placeholder="Your message"></textarea>
+                            <button class="form-submit" type="submit">Request Estimate</button>
+                        </form>
+
+                    </section>
+                </div>
+                <div class="col-sm-4 me-auto">
+                    <!-- Testimony Card 1-->
+                    <div class="card mt-3 shadow color_red-100 text-light" style="width: 18rem;" data-aos="fade-left">
+                        <div class="card-body">
+                            <sl-avatar image="/assets/images/elizabeth_g_avatar.png" label="Avatar"></sl-avatar>
+                            <h5 class="card-title d-inline">Elizabeth G.</h5>
+                            <div>
+
+                                <p class="card-text mt-1 ms-1">I love my new kitchen! They did an incredible job,
+                                    and completed
+                                    work two weeks ahead of schedule!</p>
                             </div>
                         </div>
-                        <button class="form-submit" type="submit">Send Message</button>
-                    </form>
+                    </div>
+                    <!-- Testimony Card 2-->
+                    <div class="card mt-5 shadow color_blue-100 text-light" style="width: 18rem;" data-aos="fade-left">
+                        <div class="card-body">
+                            <sl-avatar image="/assets/images/mustafah_h_avatar.png" label="Avatar"></sl-avatar>
+                            <h5 class="card-title d-inline">Mustafah H.</h5>
+                            <div>
+                                <p class="card-text mt-2 ms-1">Perfection Painting made our warehouse look exactly
+                                    as we wanted, they were there every step of the way to ensure everything went
+                                    smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimony Card 3-->
+                    <div class="card mt-5 shadow color_orange-100 text-light" style="width: 18rem;"
+                        data-aos="fade-left">
+                        <div class="card-body">
+                            <sl-avatar image="/assets/images/warren_f_avatar.png" label="Avatar"></sl-avatar>
+                            <h5 class="card-title d-inline">Warren F.</h5>
+                            <div>
 
-                </section>
-            </div>
-            <div class="col-sm-4">
-                <!-- Testimony Card 1-->
-                <div class="card mt-5 shadow" style="width: 18rem;">
-                    <div class="card-body">
-                        <sl-avatar image="assets/images/index_on-time.jpg" label="Avatar"></sl-avatar>
-                        <h5 class="card-title d-inline">Elizabeth G.</h5>
-                        <div>
-
-                            <p class="card-text mt-1">I love my new kitchen! They did an incredible job, and completed
-                                work two weeks ahead of schedule!</p>
+                                <p class="card-text mt-1 ms-1 fs-6">Our new home looks amazing. We wanted the best,
+                                    and we got it!
+                                    <br>
+                                    <br>
+                                    Perfection Painting effortlessly handled everything from design to the actual
+                                    painting.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Testimony Card 2-->
-                <div class="card mt-5 shadow" style="width: 18rem;">
-                    <div class="card-body">
-                        <sl-avatar image="assets/images/index_on-time.jpg" label="Avatar"></sl-avatar>
-                        <h5 class="card-title d-inline">Mustafah H.</h5>
-                        <div>
-                        <p class="card-text mt-1">Perfection Painting made our warehouse look exactly as we envisioned. 
-                        <br>
-                        <br>    
-                        They were there every step of the way to ensure everything went smoothly.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimony Card 3-->
-                <div class="card mt-5 shadow" style="width: 18rem;">
-                    <div class="card-body">
-                        <sl-avatar image="assets/images/index_on-time.jpg" label="Avatar"></sl-avatar>
-                        <h5 class="card-title d-inline">Warren F.</h5>
-                        <div>
+            </div>
 
-                            <p class="card-text mt-1 fs-6">Our new home looks amazing. We wanted the best, and we got it!
-                            <br>
-                            <br>    
-                            Perfection Painting effortlessly handled everything from design to the actual painting.</p>
-                        </div>
-                    </div>
+            <!-- Row 4-->
+            <div class="row" id="row-4">
+                <!-- Row 1 Col 1-->
+                <div class="col-12 text-center" id="row-4_column-1">
+
                 </div>
             </div>
-        </div>
 
-        <!-- Row 4-->
-        <div class="row" id="row-4">
-            <!-- Row 1 Col 1-->
-            <div class="col-12 text-center" id="row-4_column-1">
-               
+            <!-- Row 5 -->
+            <div class="row" id="row-5">
+                <!-- Row 5 Col 1-->
+                <div class="col-12 text-center" id="row-5_column-1">
+                    <!--[placeholder]-->
+                </div>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="row" id="row-6">
+                <!-- Row 6 Col 1-->
+                <div class="col-sm-6" id="row-6_column-1">
+                    <!--[placeholder]-->
+                </div>
+                <!-- Row 6 Col 2-->
+                <div class="col-sm-6 " id="row-6_column-2">
+                    <!--[placeholder]-->
+                </div>
+            </div>
+
+            <!-- Row 7 -->
+            <div class="row" id="row-7">
+                <!-- Row 7 Col 1-->
+                <div class="col-sm-6 text-center" id="row-7_column-1">
+                    <!--[placeholder]-->
+                </div>
+                <!-- Row 7 Col 2-->
+                <div class="col-sm-6" id="row-7_column-2">
+                    <!--[placeholder]-->
+                </div>
             </div>
         </div>
 
-        <!-- Row 5 -->
-        <div class="row" id="row-5">
-            <!-- Row 5 Col 1-->
-            <div class="col-12 text-center" id="row-5_column-1">
-                <!--[placeholder]-->
-            </div>
-        </div>
-
-        <!-- Row 6 -->
-        <div class="row" id="row-6">
-            <!-- Row 6 Col 1-->
-            <div class="col-sm-6" id="row-6_column-1">
-                <!--[placeholder]-->
-            </div>
-            <!-- Row 6 Col 2-->
-            <div class="col-sm-6 " id="row-6_column-2">
-                <!--[placeholder]-->
-            </div>
-        </div>
-
-        <!-- Row 7 -->
-        <div class="row" id="row-7">
-            <!-- Row 7 Col 1-->
-            <div class="col-sm-6 text-center" id="row-7_column-1">
-                <!--[placeholder]-->
-            </div>
-            <!-- Row 7 Col 2-->
-            <div class="col-sm-6" id="row-7_column-2">
-                <!--[placeholder]-->
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="assets/scripts/script.js"></script>
-    <!-- Scripts End-->
+        <!-- Scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="assets/scripts/script.js"></script>
+        <!-- Scripts End-->
 
 
-    <footer class="text-center text-light d-flex justify-content-center">
-        <p class="m-0">Perfect Painting- Since 1987</p>
-    </footer>
+        <footer class="text-center text-light d-flex justify-content-center">
+            <p class="m-0">Perfect Painting- Since 1987</p>
+        </footer>
 
 </body>
 
