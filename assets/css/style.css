@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 :root {
     --sl-color-primary-50: white;
@@ -98,25 +96,25 @@
     --colorElms-60: rgba(0, 71, 49, 0.6);
 
 }
-
-html,
-body {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    overflow-x: hidden;
+html {
+    height: 100%;
 }
 body {
-    background-image: linear-gradient(to bottom, #004731, #00402c, #003828, #013123, #012a1e);
+    min-height: 100%;
+    background-image: linear-gradient(to right bottom, #004734, #014331, #013f2f, #023b2c, #023729, #023527, #023226, #023024, #022f23, #012d22, #012c21, #012b20);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
     color: white;
+    overflow-X: hidden;
 }
 footer {
-    
+
     padding: 2px;
     border-top: 3px solid;
 }
 
-/* Header */
 
 /* Nav */
 
@@ -133,31 +131,26 @@ footer {
 
     }
 }
-
 .home:hover #nav_icon-1,
 .home.active #nav_icon-1 {
     color: rgba(255, 255, 255, 0.857) !important;
 
 }
-
 .services:hover #nav_icon-2,
 .services.active #nav_icon-2 {
     color: var(--colorRedPrimary-100) !important;
 
 }
-
 .about:hover #nav_icon-3,
 .about.active #nav_icon-3 {
     color: var(--colorBlue-100) !important;
 
 }
-
 .contact:hover #nav_icon-4,
 .contact.active #nav_icon-4 {
     color: var(--colorOrange-100) !important;
 
 }
-
 #logo {
     height: auto;
     width: 100%;
@@ -165,17 +158,11 @@ footer {
 }
 
 .navbar-toggler {
-    margin-left: 2vw !important;
+   
 }
 
 .navbar {
- 
-    z-index: 3;
-    width: 100%;
     /* background-color: var(--colorElms-100); */
-    backdrop-filter: blur(10px);
-
-
 }
 
 .navbar-brand {
@@ -194,22 +181,9 @@ footer {
         transform: translateY(-2px);
         
     }
-
     >a.nav-link.active {
         color: rgb(255, 255, 255);
-
-
-
     }
-
-    >a.home {}
-
-    >a.services {}
-
-    >a.about {}
-
-    >a.contact {}
-
 }
 
 /* Containers */
@@ -228,32 +202,18 @@ footer {
 }
 
 /* Index Rows */
-#row-1,
-#row-4 {
-    max-width: auto;
-}
+
 #row-3 {
     margin: 0 auto;
 }
 
-#row-4 {
-    margin-bottom: 100px;
-}
+
 
 /* Index Columns */
-#row-1_column-1 {
-
-}
 #row-2_column-1 {
     padding-right: 0 !important;
-    
+}
 
-    
-}
-#row-1_column-1 {
-    
-   
-}
 /* Hero */
 .hero_image {
     background-image: url("/assets/images/hero-alt-3.jpg");
@@ -265,38 +225,6 @@ footer {
     background-size: cover;
 }
 
-/*
-#free_estimate {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    z-index: 5;
-    top: 61vw;
-    left: auto;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: rgb(0, 0, 0);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    max-width: 425px;
-    justify-content: center;
-    font-size: 25px;
-     border-radius: 9999px 0 0 9999px;
-    box-shadow:
-        5px 5px 15px rgba(0, 0, 0, 0.504),
-        0 5px 15px rgba(0, 0, 0, 0.243) inset;
-    padding-top: 12px;
-    padding-left: 12px;
-
-    >span {
-        color: var(--colorOrange-100);
-        font-size: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-    }
-}
-*/
 
 /* Tab Group */
 .tab_panel::part(nav):hover {
@@ -319,9 +247,7 @@ footer {
 }
 
 .card-body {
-
     height: auto;
-
 }
 
 
@@ -333,9 +259,7 @@ footer {
 
     
 }
-#services_button-container {
-    background-color: var(--colorElms-100);
-}
+
 
 #service_learn-more {
     border: 0;
@@ -394,7 +318,7 @@ footer {
 
 /* Gallery */
 #gallery_row-1 {
-    background-color: var(--colorElms-100);
+   /* background-color: var(--colorElms-100); */
 }
 #gallery_row-1_column-1 {
     background-color: var(--colorBlue-100);
@@ -434,12 +358,11 @@ footer {
 }
 
 .background-orange {
-
     background-color: var(--colorOrange-100);
 }
 
 .background-red {
-
+    
     background-color: rgb(147, 57, 57);
 }
 
@@ -526,32 +449,6 @@ footer {
     }
 }
 
-/* https://coloreous.com/tools/tools_dividers_generator.html */
-.website-divider-container-410291 {
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-}
-
-.divider-img-410291 {
-    position: relative;
-    width: 100%;
-    height: 108px;
-    transform: scale(1, -1);
-    top: -32px;
-    left: 0px;
-    fill: white;
-}
-
-.divider-img-410291-white {
-    position: relative;
-    width: 100%;
-    height: 108px;
-    transform: scale(1, -1);
-    top: -32px;
-    left: 0px;
-    fill: rgb(255, 255, 255) !important;
-}
 
 .elms-mode {
     background-color: var(--colorElms-100) !important;
@@ -576,13 +473,19 @@ footer {
 }
 
 .color_orange-100 {
-    background-image: linear-gradient(to left top, #e0673c, #cd5c34, #ba522d, #a84825, #963e1e);
+    border-top: solid rgba(255, 255, 255, 0.594);
+    background-color: var(--colorOrange-100);
+   /* background-image: linear-gradient(to left top, #e0673c, #cd5c34, #ba522d, #a84825, #963e1e); */
 }
 .color_blue-100 {
-    background-image: linear-gradient(to left top, #315c83, #2c5375, #284a68, #23415b, #1f384e);
+    border-top: solid rgba(255, 255, 255, 0.594);
+    background-color: var(--colorBlue-100);
+    /* background-image: linear-gradient(to left top, #315c83, #2c5375, #284a68, #23415b, #1f384e); */
 }
 .color_red-100 {
-    background-image: linear-gradient(to left top, #bf5656, #ac4d4d, #9a4444, #883b3b, #773232);
+    border-top: solid rgba(255, 255, 255, 0.594);
+    background-color: var(--colorRed-100);
+    /* background-image: linear-gradient(to left top, #bf5656, #ac4d4d, #9a4444, #883b3b, #773232); */
 }
 
 /* https://web3forms.com/templates/basic-html-contact-form */
